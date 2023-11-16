@@ -1,0 +1,995 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  Noto Sans, 'sans-serif';
+}
+
+html {
+    font-size: .83vw;
+}
+
+.primary{
+    background: #FFF;
+    box-shadow: 0 0 1.67rem 0 rgba(0, 0, 0, .15);
+    height: 6.25em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.logo {
+    width: 17.5rem;
+    height: 3.22694rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-left: 1.9rem;
+}
+
+
+
+
+.logoImg {
+    height: 3.22694rem;
+    width: 6rem;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logoText {
+    width: 13.92813rem;
+    height: 1.44569rem;
+}
+
+.logoDescription {
+    margin-top: .36rem;
+    width: 13.92775rem;
+    height: 0.48781rem;
+    display: flex;
+    justify-content: start;
+    margin-left: -.3rem;
+    align-items: start;
+}
+
+.primaryFirstBlock {
+    display: flex;
+    align-items: center;
+}
+
+.primaryMenu {
+    width: 41.8125rem;
+    height: 1.5625rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-left: 3.75rem;
+}
+
+.primaryRef {
+    color: #202B33;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.primarySecondBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1.8rem;
+}
+
+.primaryNumber {
+    color: #202B33;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 2.5rem;
+}
+
+.secondary{
+    background: #202B33;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5rem;
+
+}
+
+.secondaryBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.secondaryItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+}
+
+.secondaryText {
+    color: #FFF;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 1rem;
+}
+
+.button {
+    display: inline-flex;
+    padding: 1.125rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.3125rem;
+    background: #0468FF;
+    border: none;
+    color: #FFF;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.button:hover {
+    background: #0687FF;
+}
+
+.button:active {
+    background: #09A7FF;
+}
+
+.mainScreen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FDFCFD;
+    padding-left: 22rem;
+    height: 40rem;
+    position: relative;
+    z-index: 0;
+
+}
+
+.mainScreenInfo {
+    margin-left: 1rem;
+
+}
+
+.bigArrows {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+}
+
+.bigArrow {
+    width: 9.22769rem;
+    height: 9.9375rem;
+    flex-shrink: 0;
+    z-index: -1;
+
+}
+
+.smallArrows {
+    width: 4.5625rem;
+    height: 0.875rem;
+    margin-bottom: 1.25em;
+}
+
+.mainScreenTitle {
+    color: #202B33;
+    font-size: 3.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 30.1875rem;
+}
+
+.mainScreenDescription {
+    margin-top: 2.2rem;
+    margin-bottom: 3.75rem;
+    color: #4C555B;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 31.9375rem;
+}
+
+.truckImg{
+    height: 100%;
+}
+
+.truckImgMobile {
+    display: none;
+}
+
+.whiteBtn {
+    background: transparent;
+    border-radius: 0.3125rem;
+    border: .15rem solid #0468FF;
+    height: 4rem;
+    display: inline-flex;
+    padding: 1.125rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    color: #0468FF;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 1rem;
+}
+
+.numbers {
+    height: 22.75rem;
+    background: #F2F5FA;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.numbersBackground {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 120%;
+    overflow: hidden;
+}
+
+.numbersBackgroundElement {
+    width: 2.83331rem;
+    height: 38.02181rem;
+    transform: rotate(28.831deg);
+    flex-shrink: 0;
+    background: #ECF1F8;
+    z-index: 1;
+}
+
+.numbersContainer {
+    width: 77%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.numberTitle {
+    color: #202B33;
+    font-size: 5.625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.numberDescription {
+    color: #4C555B;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 15.4375rem;
+}
+
+.statistics {
+    width: 120rem;
+    height: 49.9375rem;
+    background: #FAFBFD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.statisticsTitle {
+    color: #202B33;
+    font-size: 3.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 5rem;
+    margin-bottom: 3.75rem;
+}
+
+.statisticContainer {
+    display: flex;
+    width: 73%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.statistic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statisticWeight {
+    color: #4C555B;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.statisticGraphic {
+    width: 16rem;
+    height: 19.07688rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.statisticSvg {
+    margin-top: 1rem;
+    width: 15.5rem;
+    height: 18rem;
+}
+
+.statisticWe {
+    color: #202B33;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.statisticTk {
+    color: #202B33;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 3rem;
+}
+
+.statisticBenefit {
+    margin-top: 2rem;
+    color: #202B33;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.cargo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FAFBFD;
+}
+
+.cargoContainer {
+    width: 80%;
+    text-align: center;
+}
+
+.cargoTitle {
+    color: #202B33;
+
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 3.8rem;
+    margin-top: 5rem;
+}
+
+.cargoBlockRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.cargoBlock {
+    width: 28rem;
+    height: 6.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 6.25rem;
+}
+
+.cargoAvatar {
+    width: 6.25rem;
+    height: 6.25rem;
+    flex-shrink: 0;
+    background: #E9EFF8;
+    border-radius: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cargoAvatarImg {
+    height: 4.5rem;
+}
+
+.cargoBlockInfoTitle {
+    color: #202B33;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 19.5625rem;
+    text-align: left;
+}
+
+.cargoBlockInfoDescription {
+    color: #4C555B;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 19.5625rem;
+    text-align: left;
+
+}
+
+.partners {
+    width: 120rem;
+    height: 26.5rem;
+    flex-shrink: 0;
+    background: #FAFBFD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partnersTitle {
+    color: #202B33;
+    font-size: 3.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 5rem;
+    margin-bottom: 3.9rem;
+}
+
+.partnersLine {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.partner {
+    width: 15.625rem;
+    height: 7.96569rem;
+    flex-shrink: 0;
+    border-radius: 0.3125rem;
+    background: #FFF;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partnerImg {
+    height: 80%;
+}
+
+.uvexImg {
+    height: 40%;
+}
+
+.recommendations {
+    width: 120rem;
+    height: 55.1875rem;
+    flex-shrink: 0;
+    background: #FAFBFD;
+}
+
+.recommendationsTitleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.recommendationsTitle {
+    color: #202B33;
+    font-size: 3.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 5rem;
+    margin-bottom: 3.75rem;
+}
+
+.recommendationsPapersContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.recommendationsPaper {
+    width: 23.5rem;
+    height: 32.5rem;
+    border-radius: 0.3125rem;
+    margin: 0 .65rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recommendationImg {
+    width: 110%;
+    border-radius: 0.3125rem;
+
+}
+
+.recommendationsNames {
+    margin-left: 24rem;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.recommendationsName {
+    color: #2D2D2D;
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.04rem;
+}
+
+.discount {
+    background: #F2F5FA;
+    height: 29rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.discountBackground {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 120%;
+    overflow: hidden;
+    top: -3rem;
+}
+
+.discountBackgroundElement {
+    width: 2.83331rem;
+    height: 38.02181rem;
+    transform: rotate(28.831deg);
+    flex-shrink: 0;
+    background: #ECF1F8;
+    z-index: 1;
+}
+
+.largeGift {
+    position: absolute;
+    bottom: 0;
+    left: 23rem;
+    z-index: 1;
+    width: 11.1875rem;
+    height: 10.25rem;
+}
+
+.mediumGift {
+    position: absolute;
+    bottom: 0;
+    left: 35.5rem;
+    width: 6.5625rem;
+    height: 5.375rem;
+    z-index: 1;
+}
+
+.smallGift {
+    position: absolute;
+    bottom: 0;
+    left: 16.1rem;
+    z-index: 1;
+    width: 5.4375rem;
+    height: 4.375rem;
+    flex-shrink: 0;
+}
+
+.discountTitle {
+    color: #202B33;
+    text-align: center;
+    font-size: 3.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 53.3125rem;
+    margin-top: 5rem;
+    margin-bottom: 3.3rem;
+    z-index: 2;
+}
+
+.discountButton {
+    display: inline-flex;
+    padding: 1.125rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.3125rem;
+    background: #0468FF;
+    border: none;
+    color: #FFF;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 3.3rem;
+    z-index: 2;
+
+}
+
+.discountNote {
+    color: #4C555B;
+    text-align: center;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 2;
+
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 45.25rem;
+    background: #FAFBFD;
+}
+
+.questionsTitle {
+    margin-top: 5rem;
+    color: #202B33;
+    font-size: 3.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.questionsBody {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.questionFirstBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 19rem;
+    padding-right: 8rem;
+    border-right: .01rem solid #B2B1B3;
+}
+
+.questionFirstBlockTitle {
+    color: #202B33;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.questionFirstBlockNumber {
+    color: #202B33;
+    text-align: center;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.questionFirstBlockNote {
+    color: #4C555B;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.questionSecondBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 19rem;
+    padding-left: 8rem;
+}
+
+.questionSecondBlockTitle {
+    color: #202B33;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 2rem;
+}
+
+.questionSecondBlockInput {
+    width: 30.4375rem;
+    height: 5.75rem;
+    border-radius: 0.4375rem;
+    border: 0.01rem solid #9A999A;
+    background: #F4F3F4;
+    margin-bottom: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    color: #202B33;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.questionSecondBlockButton {
+    display: flex;
+    border: none;
+    width: 30.4375rem;
+    height: 5.6875rem;
+    padding: 1.125rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    border-radius: 0.3125rem;
+    background: #0468FF;
+    color: #FFF;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 1.5rem;
+
+}
+
+.questionSecondBlockNote {
+    color: #4C555B;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.office {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 54.625rem;
+    background: #FAFBFD;
+}
+
+.officeTitle {
+    color: #202B33;
+    font-size: 3.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 5rem;
+    margin-bottom: 3.75rem;
+}
+
+.officeAddress {
+    color: #202B33;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 2.2rem;
+
+}
+
+.officeMap {
+    width: 73.125rem;
+    height: 31.3125rem;
+    background: #202B33;
+}
+
+.footer {
+    height: 29rem;
+    background: #232834;
+    color: #FBFDFE;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerBody {
+    width: 73%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footerColumn {
+    height: 15.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.footerLogo {
+    width: 17.5rem;
+    height: 3.22694rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.footerPoint {
+    color: #FBFDFE;
+    font-family: Noto Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footerNote {
+    margin-top: 5rem;
+    color: #C5C8CB;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media (max-device-width: 480px), (max-width: 480px) {
+    html {
+        font-size: 3vw;
+        width: 65rem;
+    }
+
+
+
+    .secondary {
+        display: none;
+    }
+
+    .primary {
+        display: none;
+    }
+
+    .mainScreen {
+        margin-left: 0;
+        padding-left: 0;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        position: relative;
+    }
+
+    .mainScreenInfo {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .smallArrows {
+        margin-top: 1rem;
+    }
+
+
+    .mainScreenTitle {
+        width: 100%;
+        font-size: 4.2rem;
+    }
+
+    .mainScreenDescription {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    .buttonsContainer {
+        margin-top: 32rem;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3.5rem;
+
+    }
+
+    .button {
+        font-size: 1.3rem;
+        height: 4rem;
+    }
+
+    .whiteBtn {
+        margin-left: 0;
+        margin-top: 1.5rem;
+        font-size: 1.3rem;
+        height: 4rem;
+    }
+
+    .truckImg {
+        display: none;
+    }
+
+    .truckImgMobile {
+        display: block;
+        position: absolute;
+        width: 64rem;
+        top: 25rem;
+    }
+
+    .numbersBackgroundElement {
+        width: 4rem;
+        height: 30rem;
+        transform: rotate(28.831deg);
+        flex-shrink: 0;
+        background: #ECF1F8;
+        z-index: 1;
+    }
+
+    .numbersBackgroundElement:nth-child(-n+15) {
+        display: none;
+    }
+
+    .numbersContainer {
+        justify-content: space-between;
+        width: 95%;
+    }
+
+    .statistics {
+        width: 100%;
+    }
+
+    .statisticsTitle {
+        font-size: 3.2rem;
+        margin-top: 3rem;
+    }
+
+    .statisticContainer {
+        width: 95%;
+        justify-content: space-between;
+    }
+
+}
