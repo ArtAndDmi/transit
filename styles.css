@@ -884,10 +884,13 @@ html {
 }
 
 @media (max-device-width: 480px), (max-width: 480px) {
-    html {
-        font-size: 3vw;
+    /*html {*/
+    /*    font-size: 3vw;*/
+
+    /*}*/
+
+    body {
         overflow-x: hidden;
-        width: 59rem;
     }
 
 
@@ -905,49 +908,59 @@ html {
         padding-left: 0;
         flex-direction: column;
         height: auto;
-        width: 100%;
+        width: 100vw;
         position: relative;
     }
 
     .mainScreenInfo {
-        width: 100%;
+        width: 100vw;
         padding-left: 2rem;
         padding-right: 2rem;
     }
 
     .smallArrows {
         margin-top: 1rem;
+        width: 11.25rem;
+        height: 2.19rem;
+        margin-left: 2.5rem;
     }
 
 
     .mainScreenTitle {
-        width: 100%;
-        font-size: 4.2rem;
+        width: 110rem;
+        font-size: 7.5rem;
+        margin-bottom: 3.27rem;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
     }
 
     .mainScreenDescription {
-        width: 100%;
-        font-size: 1.3rem;
+        width: 110rem;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+        font-size: 2.81rem;
     }
 
     .buttonsContainer {
-        margin-top: 35rem;
         display: flex;
         flex-direction: column;
-        margin-bottom: 3.5rem;
+        margin: 66.4rem 2.5rem 7rem;
 
     }
 
     .button {
-        font-size: 1.3rem;
-        height: 4rem;
+        font-size: 2.81rem;
+        height: 9.5rem;
+        border-radius: .775rem;
     }
 
     .whiteBtn {
         margin-left: 0;
         margin-top: 1.5rem;
-        font-size: 1.3rem;
-        height: 4rem;
+        font-size: 2.81rem;
+        height: 9.5rem;
+        border-radius: .775rem;
+
     }
 
     .truckImg {
@@ -957,13 +970,13 @@ html {
     .truckImgMobile {
         display: block;
         position: absolute;
-        width: 64rem;
-        top: 35rem;
+        width: 120rem;
+        top: 50rem;
     }
 
     .numbersBackgroundElement {
-        width: 4rem;
-        height: 30rem;
+        width: 7.25rem;
+        height: 60rem;
         transform: rotate(28.831deg);
         flex-shrink: 0;
         background: #ECF1F8;
@@ -974,30 +987,67 @@ html {
         display: none;
     }
 
+    .numbers {
+        height: 37.5rem;
+
+    }
+
     .numbersContainer {
+        width: 115rem;
         justify-content: space-between;
-        width: 95%;
+
+    }
+
+    .numberTitle {
+        font-size: 11rem;
+    }
+
+    .numberDescription {
+        font-size: 2.81rem;
+        width: 30rem;
     }
 
     .statistics {
-        width: 100%;
         height: auto;
-        margin-bottom: 5rem;
-        background: #FAFBFD;
+        padding-bottom: 7rem;
     }
 
     .statisticsTitle {
-        font-size: 3.2rem;
-        margin-top: 3rem;
+        font-size: 5.3rem;
+        margin-top: 7rem;
+        margin-bottom: 7rem;
+    }
+
+    .statisticWeight {
+        font-size: 2.81rem;
     }
 
     .statisticContainer {
-        width: 95%;
+        width: 112rem;
         justify-content: space-between;
     }
 
-    .cargoTitle {
-        margin-top: 0;
+    .statisticGraphic {
+        width: 27.8rem;
+        height: 31.45rem;
     }
+
+    .statisticSvg {
+        width: 27.8rem;
+        height: 31.45rem;
+    }
+
+    .statisticWe {
+        font-size: 2.81rem;
+    }
+
+    .statisticTk {
+        font-size: 2.81rem;
+        margin-left: 4.5rem;
+    }
+
+    /*.cargoTitle {*/
+    /*    margin-top: 0;*/
+    /*}*/
 
 }
