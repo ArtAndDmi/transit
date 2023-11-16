@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  Noto Sans, 'sans-serif';
+}
+
+html {
+    font-size: .83vw;
+}
+
+.primary{
+    background: #FFF;
+    box-shadow: 0 0 1.67rem 0 rgba(0, 0, 0, .15);
+    height: 6.25em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.logo {
+    width: 17.5rem;
+    height: 3.22694rem;
+    flex-shrink: 0;
+    background: #202B33;
+    margin-left: 1.9em;
+}
+
+.primaryFirstBlock {
+    display: flex;
+    align-items: center;
+}
+
+.primaryMenu {
+    width: 41.8125rem;
+    height: 1.5625rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-left: 3.75rem;
+}
+
+.primaryRef {
+    color: #202B33;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.primarySecondBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1.8rem;
+}
+
+.primaryNumber {
+    color: #202B33;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 2.5rem;
+}
+
+.secondary{
+    background: #202B33;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5rem;
+
+}
+
+.secondaryBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.secondaryItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+}
+
+.secondaryText {
+    color: #FFF;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.button {
+    display: inline-flex;
+    padding: 1.125rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.3125rem;
+    background: #0468FF;
+    border: none;
+    color: #FFF;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.button:hover {
+    background: #0687FF;
+}
+
+.button:active {
+    background: #09A7FF;
+}
+
+
+
+.aboutUs {
+    width: 120rem;
+    height: 40.5625rem;
+    background: #FAFBFD;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+
+}
+
+.smallArrows {
+    width: 4.5625rem;
+    height: 0.875rem;
+    margin-top: 3rem;
+    margin-left: 24.25rem;
+    margin-bottom: 1.25em;
+
+}
+
+.bigArrows {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+}
+
+.bigArrow {
+    width: 9.22769rem;
+    height: 9.9375rem;
+    flex-shrink: 0;
+    z-index: -1;
+}
+
+.bigArrowsVertical {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 7.5rem;
+    right: 6.8rem;
+}
+
+.bigArrowVertical {
+    width: 9.22769rem;
+    height: 10.56006rem;
+    flex-shrink: 0;
+    z-index: -1;
+    margin-bottom: 1.5rem;
+}
+
+.aboutUsTitle {
+    color: #202B33;
+    font-size: 3.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 3.75rem;
+}
+
+.aboutUsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+.aboutUsBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutUsBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    margin-bottom: 2rem;
+}
+
+.aboutUsBlockNumber {
+    color: #202B33;
+    font-size: 4.375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.aboutUsBlockDescription {
+    color: #4C555B;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 13rem;
+    padding-left: 2rem;
+}
+
+.aboutUsImage {
+    width: 41.3125rem;
+    height: 29.3125rem;
+    margin-left: 5rem;
+}
+
+.truckImg {
+    height: 29.3125rem;
+}
+
+.philosophy {
+    width: 120rem;
+    height: 51.5rem;
+    flex-shrink: 0;
+    background: #FAFBFD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.philosophyTitle {
+    margin-top: 5rem;
+    color: #202B33;
+    font-size: 3.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: -41rem;
+    margin-bottom: 3.75rem;
+}
+
+.philosophyBlockRow {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.philosophyBlockImage {
+    width: 13rem;
+    height: 13rem;
+    margin-right: 2.3rem;
+}
+
+.openSvg {
+    width: 12.625rem;
+    height: 12.625rem;
+}
+
+.responsibilitySvg {
+    width: 12.75rem;
+    height: 12.75rem;
+}
+
+.fairSvg {
+    width: 12.625rem;
+    height: 12.625rem;
+}
+
+.honestySvg {
+    width: 12.875rem;
+    height: 12.875rem;
+    flex-shrink: 0;
+}
+
+.philosophyBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 7.5rem;
+}
+
+.philosophyBlockTitle {
+    color: #202B33;
+    text-align: left;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 17rem;
+}
+
+.philosophyBlockDescription {
+    color: #4C555B;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 15rem;
+}
+
+.insurance {
+    width: 120rem;
+    height: 14.625rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: #F2F5FA;
+
+}
+
+.insuranceBackground {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 120%;
+    overflow: hidden;
+}
+
+.insuranceBackgroundElement {
+    width: 2.83331rem;
+    height: 38.02181rem;
+    transform: rotate(28.831deg);
+    flex-shrink: 0;
+    background: #ECF1F8;
+    z-index: 0;
+}
+
+.insuranceTitle {
+    color: #202B33;
+    font-size: 3.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    z-index: 2;
+}
+
+.partners {
+    width: 120rem;
+    height: 42.75rem;
+    flex-shrink: 0;
+    background: #FAFBFD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partnersTitle {
+    color: #202B33;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    margin-left: -16rem;
+}
+
+.partnersRow {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2.8rem;
+}
+
+.partner {
+    width: 22.5rem;
+    height: 12.5rem;
+    flex-shrink: 0;
+    border-radius: 0.3125rem;
+    background: #FFF;
+    box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.footer {
+    height: 29rem;
+    background: #232834;
+    color: #FBFDFE;
+
+    padding-top: 5rem;
+}
+
+.footerBody {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20rem;
+    width: 70%;
+}
+
+.footerColumn {
+    height: 15.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.footerLogo {
+    height: 3.3rem;
+    width: 17.5rem;
+    background: #0468FF;
+}
+
+.footerPoint {
+    color: #FBFDFE;
+    font-family: Noto Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footerNote {
+    margin-top: 5rem;
+    color: #C5C8CB;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

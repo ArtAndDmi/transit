@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Noto Sans, 'sans-serif';
+}
+
+html {
+    font-size: .83vw;
+}
+
+.primary {
+    background: #FFF;
+    box-shadow: 0 0 1.67rem 0 rgba(0, 0, 0, .15);
+    height: 6.25em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+
+}
+
+.logo {
+    width: 17.5rem;
+    height: 3.22694rem;
+    flex-shrink: 0;
+    background: #202B33;
+    margin-left: 1.9em;
+}
+
+.primaryFirstBlock {
+    display: flex;
+    align-items: center;
+}
+
+.primaryMenu {
+    width: 41.8125rem;
+    height: 1.5625rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-left: 3.75rem;
+}
+
+.primaryRef {
+    color: #202B33;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.primarySecondBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1.8rem;
+}
+
+.primaryNumber {
+    color: #202B33;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 2.5rem;
+}
+
+.secondary {
+    background: #202B33;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5rem;
+
+}
+
+.secondaryBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.secondaryItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+}
+
+.secondaryText {
+    color: #FFF;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.button {
+    display: inline-flex;
+    padding: 1.125rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.3125rem;
+    background: #0468FF;
+    border: none;
+    color: #FFF;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.button:hover {
+    background: #0687FF;
+}
+
+.button:active {
+    background: #09A7FF;
+}
+
+
+.bigArrows {
+    position: absolute;
+    display: flex;
+    top: 9.7rem;
+    left: 0;
+}
+
+.bigArrow {
+    width: 9.22769rem;
+    height: 9.9375rem;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.bigArrowsVertical {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 13rem;
+    right: 6.8rem;
+    z-index: 2;
+}
+
+.bigArrowVertical {
+    width: 10rem;
+    height: 10rem;
+    flex-shrink: 0;
+    z-index: -1;
+    margin-bottom: 0;
+}
+
+.reviews {
+    height: 47.125rem;
+    background: #FAFBFD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.smallArrows {
+    width: 4.5625rem;
+    height: 0.875rem;
+    margin-top: 3rem;
+    margin-bottom: 1.25em;
+}
+
+.reviewsTitleContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+    margin-bottom: 3.75rem;
+}
+
+.reviewsTitle {
+    color: #202B33;
+    font-size: 3.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 26rem;
+
+
+}
+
+.reviewsHrefContainer {
+    display: flex;
+    align-items: center;
+    gap: .62rem;
+}
+
+.reviewsHrefSvg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.reviewsHref {
+    color: #0468FF;
+
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.reviewsBody {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20.625rem;
+    height: 29.75rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: #FEFEFF;
+    box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.10);
+    margin-right: 1.5rem;
+}
+
+.review:last-child {
+    margin-right: 0;
+}
+
+.reviewImage {
+    width: 9.375rem;
+    height: 9.375rem;
+    border-radius: 50%;
+    border: .4rem solid #0468FF;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+
+.reviewName {
+    color: #2D2D2D;
+    text-align: center;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.0275rem;
+}
+
+.reviewProfession {
+    color: #6A6C6C;
+    text-align: center;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 133.333% */
+    letter-spacing: 0.0225rem;
+    margin-bottom: 1.25rem;
+    margin-top: .3rem;
+}
+
+.reviewBody {
+    width: 18.125rem;
+    color: #88898A;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 133.333% */
+    letter-spacing: 0.0225rem;
+}
+
+.thanks {
+    width: 120rem;
+    height: 103.8125rem;
+    flex-shrink: 0;
+    background: #FAFBFD;
+    display: flex;
+    flex-direction: column;
+}
+
+.thanksTitle {
+    text-align: center;
+    color: #202B33;
+    font-size: 3.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 2.8rem;
+    margin-top: 6rem;
+}
+
+.thanksRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 3.75rem;
+}
+
+.thankContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1.3rem;
+
+}
+
+.thankContainer:last-child {
+    margin-right: 0;
+}
+
+.thankImage {
+    width: 25rem;
+    height: 34rem;
+    flex-shrink: 0;
+    /*border: 1px solid red;*/
+    border-radius: 0.3125rem;
+    /*box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.15);*/
+    margin-bottom: 1.25rem;
+}
+
+.thankName {
+    color: #2D2D2D;
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.04rem;
+}
+
+.thankButtonContainer {
+    margin: 0 auto;
+}
+
+.thankButton {
+    border: none;
+    display: inline-flex;
+    padding: 1.125rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.3125rem;
+    background: #0468FF;
+    color: #FFF;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    height: 3.8rem;
+
+}
+
+
+.footer {
+    height: 29rem;
+    background: #232834;
+    color: #FBFDFE;
+
+    padding-top: 5rem;
+}
+
+.footerBody {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20rem;
+    width: 70%;
+}
+
+.footerColumn {
+    height: 15.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.footerLogo {
+    height: 3.3rem;
+    width: 17.5rem;
+    background: #0468FF;
+}
+
+.footerPoint {
+    color: #FBFDFE;
+    font-family: Noto Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footerNote {
+    margin-top: 5rem;
+    color: #C5C8CB;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

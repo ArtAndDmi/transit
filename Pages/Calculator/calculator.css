@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Noto Sans, 'sans-serif';
+}
+
+html {
+    font-size: .83vw;
+}
+
+.primary {
+    background: #FFF;
+    box-shadow: 0 0 1.67rem 0 rgba(0, 0, 0, .15);
+    height: 6.25em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+
+}
+
+.logo {
+    width: 17.5rem;
+    height: 3.22694rem;
+    flex-shrink: 0;
+    background: #202B33;
+    margin-left: 1.9em;
+}
+
+.primaryFirstBlock {
+    display: flex;
+    align-items: center;
+}
+
+.primaryMenu {
+    width: 41.8125rem;
+    height: 1.5625rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-left: 3.75rem;
+}
+
+.primaryRef {
+    color: #202B33;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.primarySecondBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1.8rem;
+}
+
+.primaryNumber {
+    color: #202B33;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 2.5rem;
+}
+
+.secondary {
+    background: #202B33;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5rem;
+
+}
+
+.secondaryBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.secondaryItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+}
+
+.secondaryText {
+    color: #FFF;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.button {
+    display: inline-flex;
+    padding: 1.125rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.3125rem;
+    background: #0468FF;
+    border: none;
+    color: #FFF;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.button:hover {
+    background: #0687FF;
+}
+
+.button:active {
+    background: #09A7FF;
+}
+
+
+.bigArrows {
+    position: absolute;
+    display: flex;
+    top: 9.7rem;
+    left: 0;
+}
+
+.bigArrow {
+    width: 9.22769rem;
+    height: 9.9375rem;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.bigArrowsVertical {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 18rem;
+    right: 6.8rem;
+    z-index: 2;
+}
+
+.bigArrowVertical {
+    width: 10rem;
+    height: 10rem;
+    flex-shrink: 0;
+    z-index: -1;
+    margin-bottom: 0;
+
+}
+
+.smallArrows {
+    width: 4.5625rem;
+    height: 0.875rem;
+    margin-top: 3rem;
+    margin-bottom: 1.25em;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120rem;
+    height: 48.25rem;
+}
+
+.calculatorTitle {
+    color: #202B33;
+    font-size: 3.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 3.75rem;
+    z-index: 2;
+}
+
+.calculatorBodyContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.calculatorFirstContainer {
+    box-sizing: content-box;
+    padding-right: 2.3rem;
+    border-right: 0.1rem solid #9A999A;
+    width: 46rem;
+    height: 29.5rem;
+    margin-left: 6rem;
+}
+
+
+.calculatorBlockTitle {
+    color: #202B33;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 1.5rem;
+}
+
+.calculatorBlock {
+    margin-bottom: 2.8rem;
+}
+
+.calculatorInputs {
+    display: flex;
+    align-items: center;
+    gap: .94rem;
+}
+
+.calculatorFirstInput {
+    border-radius: 0.4375rem;
+    border: 1px solid #9A999A;
+    background: #FDFCFD;
+    padding: 1rem;
+    width: 20.4rem;
+    height: 3.75rem;
+    flex-shrink: 0;
+    color: #4C555B;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.0225rem;
+}
+
+
+
+.changeButton {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    /*margin: -.3rem .9rem 0 .9rem;*/
+    border: none;
+}
+
+.changeButtonSvg {
+    width: 3.75rem;
+    height: 3.75rem;
+}
+
+.calculatorInput {
+    border-radius: 0.4375rem;
+    border: 1px solid #9A999A;
+    background: #FDFCFD;
+    padding: 1rem;
+    width: 22.3rem;
+    height: 3.75rem;
+    flex-shrink: 0;
+    color: #4C555B;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.0225rem;
+    margin-right: 0.9em;
+}
+
+.calculatorInput:last-child {
+    margin-right: 0;
+}
+
+.calcButton {
+    display: flex;
+    width: 23.625rem;
+    padding: 1.125rem 2rem;
+    justify-content: center;
+    align-items: center;
+    /*gap: 0.625rem;*/
+    border-radius: 0.3125rem;
+    background: #0468FF;
+    color: #FFF;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: 0;
+}
+
+.calculatorContainer {
+    margin-left: 2.25rem;
+}
+
+.calculatorContainerDescription {
+    color: #4C555B;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.0225rem;
+    width: 22rem;
+}
+
+.sendNumberButton {
+    margin-top: 2.2rem;
+    border: none;
+    display: flex;
+    width: 20.5rem;
+    padding: 1.125rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.3125rem;
+    background: #0468FF;
+    color: #FFF;
+    font-family: Noto Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+
+.footer {
+    height: 29rem;
+    background: #232834;
+    color: #FBFDFE;
+
+    padding-top: 5rem;
+}
+
+.footerBody {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20rem;
+    width: 70%;
+}
+
+.footerColumn {
+    height: 15.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.footerLogo {
+    height: 3.3rem;
+    width: 17.5rem;
+    background: #0468FF;
+}
+
+.footerPoint {
+    color: #FBFDFE;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footerNote {
+    margin-top: 5rem;
+    color: #C5C8CB;
+    text-align: center;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
