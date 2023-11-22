@@ -11,6 +11,7 @@ html {
     font-size: .83vw;
 }
 
+
 .primary{
     background: #FFF;
     box-shadow: 0 0 1.67rem 0 rgba(0, 0, 0, .15);
@@ -109,39 +110,6 @@ html {
     margin-right: 2.5rem;
 }
 
-.secondary {
-    background: #202B33;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 3.5rem;
-
-}
-
-.secondaryBlock {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.secondaryItem {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 15rem;
-}
-
-.secondaryText {
-    color: #FFF;
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
 
 .button {
     display: inline-flex;
@@ -167,134 +135,91 @@ html {
     background: #09A7FF;
 }
 
-.services {
-    margin-top: 6rem;
-    width: 120rem;
-    height: 55.25rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
-
-
 .bigArrows {
     position: absolute;
     display: flex;
-    top: 0;
+    top: 6rem;
     left: 0;
+
 }
 
 .bigArrow {
     width: 9.22769rem;
     height: 9.9375rem;
     flex-shrink: 0;
-    z-index: -1;
+    z-index: 0;
 }
 
 .bigArrowsVertical {
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 7.5rem;
-    right: 6.8rem;
+    top: 5rem;
+    right: 3rem;
+    z-index: 1;
 }
 
 .bigArrowVertical {
-    width: 9.22769rem;
-    height: 10.56006rem;
+    width: 10rem;
+    height: 10rem;
     flex-shrink: 0;
     z-index: -1;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
+}
+
+.tariffs {
+    margin-top: 6rem;
+    height: auto;
+    background: #FAFBFD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .smallArrows {
     width: 4.5625rem;
     height: 0.875rem;
     margin-top: 3rem;
-    margin-bottom: 1.25rem;
-
+    margin-bottom: 1.25em;
 }
 
-.servicesTitle {
+.tariffsTitle {
     color: #202B33;
     font-size: 3.375rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 3.75rem;
-}
 
-.servicesRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 1.8rem;
-}
-
-.servicesBlock {
-    width: 35.625rem;
-    height: 17.63588rem;
-    flex-shrink: 0;
-    border-radius: 0.3125rem;
-    background: #FFF;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.15);
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    overflow: hidden;
-}
-
-.servicesBlock:first-child {
-    margin-right: 1.8rem;
 
 }
 
-.servicesBlockColumn {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding-left: 1.8rem;
+.tableContainer {
+    z-index: 10;
 }
 
-.servicesBlockIcon {
-    width: 4.4375rem;
-    height: 4.4375rem;
-    margin-bottom: 1rem;
+.table {
+    border-collapse: collapse;
+    width: 100rem;
+    margin-top: 4rem;
+    z-index: 3;
+    margin-bottom: 10rem;
 }
 
-
-.servicesBlockTitle {
-    color: #202B33;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-bottom: 1.9rem;
-    width: 17rem;
+.tr {
+    border-bottom: 1px solid #ccc;
+    z-index: 3;
 }
 
-.servicesBlockImageContainer {
-    border: 1rem solid #0477FF;
-    border-radius: 50%;
-    width: 30rem;
-    display: flex;
-    height: 30rem;
-    position: absolute;
-    left: 20rem;
-    top: -6rem;
-    z-index: 2;
-    overflow: hidden;
-}
+.td {
+    text-align: center;
+    margin-left: 2rem;
+    border: 1px solid #ccc;
+    font-size: 1.3rem;
+    z-index: 3;
+    background: #FAFBFD;
 
-.servicesBlockImage {
-    z-index: 0;
-    position: absolute;
-    top: 5rem;
-    width: 18rem;
-    right: 12rem;
-}
 
+}
 
 
 .footer {
@@ -352,91 +277,10 @@ html {
     line-height: normal;
 }
 
+
 @media (max-device-width: 480px), (max-width: 480px) {
-
-    body {
-        overflow-x: hidden;
-    }
-
-    .secondary {
-        display: none;
-    }
-
-    .primary {
-        display: none;
-    }
-
-
-    .smallArrows {
-        margin-top: 1rem;
-        width: 11.25rem;
-        height: 3.19rem;
-    }
-
-    .bigArrowsVertical {
-        right: 0;
-        top: 0;
-        gap: 0;
-        align-items: start;
-    }
-
-    .bigArrowVertical {
-        height: 10rem;
-        margin-bottom: -1rem;
-    }
-
-    .services {
-        height: auto;
-    }
-
-    .servicesTitle {
+    .tariffsTitle {
         font-size: 5.3rem;
-    }
-
-    .servicesRow {
-        width: 114rem;
-        justify-content: space-between;
-    }
-
-    .servicesBlock {
-        width: 55.8rem;
-        height: 27.5rem;
-    }
-
-    .servicesBlockImageContainer {
-        border: 1rem solid #0477FF;
-        border-radius: 50%;
-        width: 47rem;
-        display: flex;
-        height: 47rem;
-        position: absolute;
-        left: 31.3rem;
-        top: -9.3rem;
-        z-index: 2;
-        overflow: hidden;
-    }
-
-    .servicesBlockImage {
-        height: 35rem;
-        width: auto;
-    }
-
-    .servicesBlockIcon {
-        width: 8rem;
-        height: 8rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .servicesBlockSvg {
-        width: 6.25rem;
-        height: 6.25rem;
-    }
-
-    .servicesBlockTitle {
-        font-size: 2.81rem;
-        width: 24rem;
     }
 
 

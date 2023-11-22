@@ -11,7 +11,7 @@ html {
     font-size: .83vw;
 }
 
-.primary {
+.primary{
     background: #FFF;
     box-shadow: 0 0 1.67rem 0 rgba(0, 0, 0, .15);
     height: 6.25em;
@@ -19,15 +19,51 @@ html {
     align-items: center;
     justify-content: space-between;
     z-index: 100;
-
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .logo {
     width: 17.5rem;
     height: 3.22694rem;
     flex-shrink: 0;
-    background: #202B33;
-    margin-left: 1.9em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-left: 1.9rem;
+    cursor: pointer;
+
+}
+
+
+
+
+.logoImg {
+    height: 3.22694rem;
+    width: 6rem;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logoText {
+    width: 13.92813rem;
+    height: 1.44569rem;
+}
+
+.logoDescription {
+    margin-top: .36rem;
+    width: 13.92775rem;
+    height: 0.48781rem;
+    display: flex;
+    justify-content: start;
+    margin-left: -.3rem;
+    align-items: start;
 }
 
 .primaryFirstBlock {
@@ -50,6 +86,11 @@ html {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    text-decoration: none;
+}
+
+.primaryRef:visited {
+    color: #202B33;
 }
 
 .primarySecondBlock {
@@ -126,15 +167,47 @@ html {
     background: #09A7FF;
 }
 
+
+.bigArrows {
+    position: absolute;
+    display: flex;
+    top: 6rem;
+    left: 0;
+}
+
+.bigArrow {
+    width: 9.22769rem;
+    height: 9.9375rem;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.bigArrowsVertical {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 18rem;
+    right: 6.8rem;
+    z-index: 2;
+}
+
+.bigArrowVertical {
+    width: 10rem;
+    height: 10rem;
+    flex-shrink: 0;
+    z-index: -1;
+    margin-bottom: 0;
+
+}
+
 .smallArrows {
     width: 4.5625rem;
     height: 0.875rem;
-    background: #202B33;
     margin-top: 3rem;
     margin-bottom: 1.25em;
 }
-
 .contacts {
+    margin-top: 6rem;
     width: 120rem;
     height: 67.5rem;
     background: #FAFBFD;
@@ -174,8 +247,14 @@ html {
 .contactImg {
     width: 1.75rem;
     height: 1.75rem;
-    background: #202B33;
     margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactSvg {
+    height: 1.75rem;
 }
 
 .contactText {
@@ -222,20 +301,22 @@ html {
 }
 
 
+
 .footer {
     height: 29rem;
     background: #232834;
     color: #FBFDFE;
-
     padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footerBody {
+    width: 73%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-left: 20rem;
-    width: 70%;
 }
 
 .footerColumn {
@@ -247,13 +328,18 @@ html {
 }
 
 .footerLogo {
-    height: 3.3rem;
     width: 17.5rem;
-    background: #0468FF;
+    height: 3.22694rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
 }
 
 .footerPoint {
     color: #FBFDFE;
+    font-family: Noto Sans;
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 600;
@@ -264,8 +350,144 @@ html {
     margin-top: 5rem;
     color: #C5C8CB;
     text-align: center;
+    font-family: Noto Sans;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+@media (max-device-width: 480px), (max-width: 480px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .secondary {
+        display: none;
+    }
+
+    .primary {
+        display: none;
+    }
+
+    .bigArrows {
+        top: 0;
+    }
+
+    .smallArrows {
+        margin-top: 1rem;
+        width: 11.25rem;
+        height: 3.19rem;
+    }
+
+    .bigArrowsVertical {
+        right: 0;
+        top: 0;
+        gap: 0;
+        align-items: start;
+    }
+
+    .bigArrowVertical {
+        height: 10rem;
+        margin-bottom: -1rem;
+    }
+
+    .contacts {
+        height: auto;
+    }
+
+    .contactsName {
+        font-size: 5.3rem;
+    }
+
+    .contactsInfo {
+        width: 110rem;
+        z-index: 2;
+    }
+
+    .contactImg {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .contactSvg {
+        height: 4.375rem;
+        width: 4.375rem;
+    }
+
+    .contactText {
+        font-size: 2.81rem;
+    }
+
+    .contactsSecondBlock {
+        height: 20rem;
+        width: 32rem;
+    }
+
+    .contactsSecondBlockTitle {
+        font-size: 3rem;
+    }
+
+    .contactsSecondBlockDescription {
+        font-size: 2.8rem;
+        width: 25rem;
+        margin-left: 3rem;
+        margin-top: 2rem;
+    }
+
+    .contactsMap {
+        width: 110rem;
+        height: 47rem;
+        margin-bottom: 7rem;
+    }
+
+
+    .footer {
+        height: 50rem;
+        margin-bottom: 0;
+    }
+
+    .footerLogo {
+        width: 40rem;
+        height: 10rem;
+    }
+
+    .logoImg {
+        width: auto;
+        height: 7rem;
+        margin-right: .5rem;
+    }
+
+    .logoText {
+        width: 33rem;
+        height: auto;
+    }
+
+    .logoDescription {
+        margin-top: 1rem;
+        width: 33rem;
+        height: 1.9rem;
+
+    }
+
+    .footerBody {
+        width: 110rem;
+        height: 50rem;
+        align-items: start;
+        margin-top: 2rem;
+    }
+
+    .footerPoint {
+        font-size: 2.8rem;
+        font-weight: 400;
+        line-height: 5rem;
+    }
+
+    .footerColumn {
+        max-width: 40rem;
+        height: auto;
+
+    }
+
 }

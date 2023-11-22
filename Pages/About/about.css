@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:  Noto Sans, 'sans-serif';
+    font-family: Noto Sans, 'sans-serif';
 }
 
 html {
@@ -19,14 +19,51 @@ html {
     align-items: center;
     justify-content: space-between;
     z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .logo {
     width: 17.5rem;
     height: 3.22694rem;
     flex-shrink: 0;
-    background: #202B33;
-    margin-left: 1.9em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-left: 1.9rem;
+    cursor: pointer;
+
+}
+
+
+
+
+.logoImg {
+    height: 3.22694rem;
+    width: 6rem;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logoText {
+    width: 13.92813rem;
+    height: 1.44569rem;
+}
+
+.logoDescription {
+    margin-top: .36rem;
+    width: 13.92775rem;
+    height: 0.48781rem;
+    display: flex;
+    justify-content: start;
+    margin-left: -.3rem;
+    align-items: start;
 }
 
 .primaryFirstBlock {
@@ -49,6 +86,11 @@ html {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    text-decoration: none;
+}
+
+.primaryRef:visited {
+    color: #202B33;
 }
 
 .primarySecondBlock {
@@ -66,8 +108,7 @@ html {
     line-height: normal;
     margin-right: 2.5rem;
 }
-
-.secondary{
+.secondary {
     background: #202B33;
     color: #fff;
     display: flex;
@@ -126,7 +167,6 @@ html {
 }
 
 
-
 .aboutUs {
     width: 120rem;
     height: 40.5625rem;
@@ -135,7 +175,7 @@ html {
     flex-direction: column;
     position: relative;
     z-index: 0;
-
+    margin-top: 6rem;
 }
 
 .smallArrows {
@@ -398,22 +438,26 @@ html {
     justify-content: center;
 }
 
+.partnersContainer {
+    display: none;
+}
 
 
 .footer {
     height: 29rem;
     background: #232834;
     color: #FBFDFE;
-
     padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footerBody {
+    width: 73%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-left: 20rem;
-    width: 70%;
 }
 
 .footerColumn {
@@ -425,9 +469,13 @@ html {
 }
 
 .footerLogo {
-    height: 3.3rem;
     width: 17.5rem;
-    background: #0468FF;
+    height: 3.22694rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
 }
 
 .footerPoint {
@@ -448,4 +496,266 @@ html {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+
+@media (max-device-width: 480px), (max-width: 480px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .secondary {
+        display: none;
+    }
+
+    .primary {
+        display: none;
+    }
+
+    .smallArrows {
+        margin-top: 1rem;
+        width: 11.25rem;
+        height: 3.19rem;
+        margin-left: 50rem;
+    }
+
+    .bigArrowsVertical {
+        right: 0;
+        top: 0;
+        gap: 0;
+        align-items: start;
+    }
+
+    .bigArrowVertical {
+        height: 10rem;
+        margin-bottom: -1rem;
+    }
+
+    .aboutUs {
+        height: auto;
+    }
+
+    .aboutUsContainer {
+        justify-content: space-between;
+    }
+
+    .aboutUsBody {
+        width: 60rem;
+        height: 40rem;
+        margin-left: 5rem;
+    }
+
+    .aboutUsImage {
+        width: 60rem;
+        height: 40rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .truckImg {
+        width: 50rem;
+        height: auto;
+        border-radius: .775rem;
+    }
+
+    .aboutUsTitle {
+        font-size: 5rem;
+    }
+
+    .aboutUsBlockNumber {
+        font-size: 5.3rem;
+        font-weight: 500;
+    }
+
+    .aboutUsBlockDescription {
+        font-size: 2.8rem;
+        width: 30rem;
+    }
+
+    .aboutUsBlock {
+        height: auto;
+    }
+
+    .philosophy {
+        align-items: start;
+        height: auto;
+    }
+
+    .philosophyTitle {
+        margin-left: 3rem;
+        font-size: 5.3rem;
+        margin-bottom: 10rem;
+    }
+
+    .philosophyBlockRow {
+        margin-left: 3rem;
+        margin-right: 3rem;
+        width: 112rem;
+        justify-content: space-around;
+    }
+
+    .philosophyBlock {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .philosophyBlockImage {
+        width: 34rem;
+        height: 34rem;
+        margin: 0;
+    }
+
+    .openSvg {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .responsibilitySvg {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .fairSvg {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .honestySvg {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .philosophyBlockBody {
+        width: 50rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .philosophyBlockTitle {
+        color: #202B33;
+        text-align: center;
+        font-size: 4.8rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        width: 49rem;
+    }
+
+    .philosophyBlockDescription {
+        margin-top: 3rem;
+        width: 42rem;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .insurance {
+        height: auto;
+    }
+
+    .insuranceBackgroundElement {
+        width: 7.25rem;
+        height: 60rem;
+        transform: rotate(28.831deg);
+        flex-shrink: 0;
+        background: #ECF1F8;
+        z-index: 1;
+    }
+
+    .insuranceBackgroundElement:nth-child(-n+15) {
+        display: none;
+    }
+
+    .insuranceTitle {
+        font-size: 5.3rem;
+        padding: 6rem 0;
+    }
+
+    .partners {
+        height: auto;
+    }
+
+    .partnersTitle {
+        font-size: 4rem;
+        margin-left: 0;
+        text-align: center;
+        width: 70rem;
+        margin-top: 5rem;
+    }
+
+    .partnersRow {
+        display: none;
+    }
+
+    .partnersContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 3.5rem;
+    }
+
+    .partnersColumn {
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+        margin-bottom: 7rem;
+    }
+
+    .partner {
+        width: 50rem;
+        height: 25rem;
+    }
+
+
+    .footer {
+        height: 50rem;
+        margin-bottom: 0;
+    }
+
+    .footerLogo {
+        width: 40rem;
+        height: 10rem;
+    }
+
+    .logoImg {
+        width: auto;
+        height: 7rem;
+        margin-right: .5rem;
+    }
+
+    .logoText {
+        width: 33rem;
+        height: auto;
+    }
+
+    .logoDescription {
+        margin-top: 1rem;
+        width: 33rem;
+        height: 1.9rem;
+
+    }
+
+    .footerBody {
+        width: 110rem;
+        height: 50rem;
+        align-items: start;
+        margin-top: 2rem;
+    }
+
+    .footerPoint {
+        font-size: 2.8rem;
+        font-weight: 400;
+        line-height: 5rem;
+    }
+
+    .footerColumn {
+        max-width: 40rem;
+        height: auto;
+
+    }
+
+
 }

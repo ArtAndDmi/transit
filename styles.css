@@ -11,6 +11,14 @@ html {
     font-size: .83vw;
 }
 
+.mobileHeader {
+    display: none;
+}
+
+.navMenu {
+    display: none;
+}
+
 .primary{
     background: #FFF;
     box-shadow: 0 0 1.67rem 0 rgba(0, 0, 0, .15);
@@ -19,6 +27,9 @@ html {
     align-items: center;
     justify-content: space-between;
     z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .logo {
@@ -81,6 +92,11 @@ html {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    text-decoration: none;
+}
+
+.primaryRef:visited {
+    color: #202B33;
 }
 
 .primarySecondBlock {
@@ -150,6 +166,7 @@ html {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -169,6 +186,7 @@ html {
     height: 40rem;
     position: relative;
     z-index: 0;
+    margin-top: 6rem;
 
 }
 
@@ -470,6 +488,8 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
+
 }
 
 .partnersTitle {
@@ -485,8 +505,31 @@ html {
 .partnersLine {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: auto;
     justify-content: space-around;
+    gap: 3rem;
+    height: 10rem;
+    margin-left: 143rem;
+    /*margin-left: -118rem;*/
+    /*animation-name: runLine;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-duration: 2s;*/
+    animation: runLine 20s linear infinite;
+    /*transform: translateX(-50.8%);*/
+    /*transform: translateX(0);*/
+
+}
+
+@keyframes runLine {
+    0% {
+        margin-left: 143rem;
+    }
+    100% {
+        /*transform: translateX(-112.1rem);*/
+        /*transform: translateX(-50.8%);*/
+        margin-left: -118rem;
+
+    }
 }
 
 .partner {
@@ -499,11 +542,9 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
 }
 
-.partnerImg {
-    height: 80%;
-}
 
 .uvexImg {
     height: 40%;
@@ -521,6 +562,7 @@ html {
     justify-content: center;
     align-items: center;
     width: 100%;
+
 }
 
 .recommendationsTitle {
@@ -825,7 +867,6 @@ html {
 .officeMap {
     width: 73.125rem;
     height: 31.3125rem;
-    background: #202B33;
 }
 
 .footer {
@@ -893,6 +934,134 @@ html {
         overflow-x: hidden;
     }
 
+    .mobileHeader {
+        display: flex;
+        height: 15.625rem;
+        align-items: center;
+        padding-left: 4rem;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        z-index: 3;
+        background: #FFFFFF;
+        width: 122rem;
+        box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.15);
+
+    }
+
+    .mobileHeaderLogo {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        width: 50rem;
+    }
+
+    .mobileHeaderLogoIcon {
+        height: 8rem;
+        width: 8rem;
+
+    }
+
+    .mobileHeaderLogoLabels {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobileHeaderLogoName {
+        height: 5rem;
+        width: 30rem;
+
+    }
+
+    .mobileHeaderLogoLabel {
+        height: 3rem;
+        width: 30rem;
+    }
+
+    .mobileHeaderButton {
+        display: inline-flex;
+        padding: 3.125rem 5rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        background: #0468FF;
+        color: #FFF;
+        font-family: Noto Sans;
+        font-size: 2.81rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border: none;
+    }
+
+    .mobileHeaderBurgerIcon {
+        /*border: 1px solid #000;*/
+        height: 15.625rem;
+        width: 15.625rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 20;
+    }
+
+    .mobileHeaderBurgerIcon {
+        margin-right: 6rem;
+        width: 4.2rem;
+        height: 3.4rem;
+        cursor: pointer;
+        z-index: 25;
+    }
+
+    .navMenu {
+        position: absolute;
+        top: 0;
+        z-index: 10;
+        width: 110vw;
+        height: 100vh;
+        transition: .2s;
+        background: #FFFFFF;
+        transform: translateX(110vw);
+    }
+
+    .navMenuItem {
+        color: #202B33;
+
+        font-family: Noto Sans;
+        font-size: 5rem;
+        padding-left: 5rem;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        cursor: pointer;
+        transition: .2s;
+    }
+
+    .navMenuItem:hover {
+        background: #EFEFEF;
+    }
+
+    .navMenuItem:active {
+        background: #EFEFEF;
+    }
+
+
+
+
+    .navMenuItem:first-child {
+        margin-top: 10rem;
+    }
+
+    .navMenuLabel {
+        color: #202B33;
+        text-decoration: none;
+    }
+
+    .navMenuLabel:visited {
+        color: #202B33;
+        text-decoration: none;
+    }
 
 
     .secondary {
@@ -910,6 +1079,7 @@ html {
         height: auto;
         width: 100vw;
         position: relative;
+        margin-top: 15.625rem;
     }
 
     .mainScreenInfo {
@@ -944,7 +1114,7 @@ html {
     .buttonsContainer {
         display: flex;
         flex-direction: column;
-        margin: 66.4rem 2.5rem 7rem;
+        margin: 71.8rem 2.5rem 7rem;
 
     }
 
@@ -989,7 +1159,6 @@ html {
 
     .numbers {
         height: 37.5rem;
-
     }
 
     .numbersContainer {
@@ -1046,8 +1215,310 @@ html {
         margin-left: 4.5rem;
     }
 
-    /*.cargoTitle {*/
-    /*    margin-top: 0;*/
-    /*}*/
+    .cargoTitle {
+        font-size: 5.3rem;
+        margin-top: 4rem;
+        margin-bottom: 7rem;
+    }
+
+    .cargoBlock {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        height: auto;
+    }
+
+    .cargoAvatar {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 3rem;
+    }
+
+    .cargoAvatarImg {
+        height: 10rem;
+    }
+
+
+
+    .cargoBlockInfoTitle {
+        text-align: center;
+        width: auto;
+        font-size: 4rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .cargoBlockInfoDescription {
+        margin: 0;
+        text-align: center;
+        font-size: 2.81rem;
+        width: 50rem;
+
+    }
+
+    .cargoBlockRow {
+        margin-bottom: 7rem;
+        gap: 8rem;
+    }
+
+    .partners {
+        height: auto;
+    }
+
+    .partnersTitle {
+        font-size: 5.3rem;
+    }
+
+    .partnersLine {
+        height: 23rem;
+        margin-left: 342rem;
+        animation: runLineMobile 20s linear infinite;
+
+
+    }
+
+    @keyframes runLineMobile {
+        0% {
+            margin-left: 342rem;
+        }
+        100% {
+
+            margin-left: -120rem;
+
+        }
+    }
+
+    .partner {
+        width: 30rem;
+        height: 15rem;
+        border-radius: 0.3125rem;
+        padding: 2rem;
+    }
+
+    .recommendations {
+        height: auto;
+    }
+
+    .recommendationsTitle {
+        font-size: 5.3rem;
+        margin-top: 4rem;
+        margin-bottom: 7rem;
+    }
+
+    .recommendationsPapersContainer {
+        justify-content: center;
+        gap: 0;
+    }
+
+    .recommendationsPaper {
+        width: 38.525rem;
+        height: auto;
+        border-radius: 0.3125rem;
+        margin: 0;
+    }
+
+    .recommendationImg {
+        width: 40.525rem;
+        height: auto;
+        border-radius: 0.3125rem;
+        margin: 0;
+    }
+
+    .recommendationsNames {
+        width: 112rem;
+        margin-left: 4rem;
+    }
+
+    .recommendationsName {
+        font-size: 2.81rem;
+        padding-bottom: 5rem;
+    }
+
+    .discount {
+        height: auto;
+
+    }
+
+    .discountTitle {
+        font-size: 4.5rem;
+        width: 70rem;
+        margin-bottom: 3.3rem;
+    }
+
+    .discountButton {
+        padding: 2rem 3.75rem;
+        font-size: 2rem;
+        border-radius: .45rem;
+        margin-bottom: 4.2rem;
+    }
+
+    .discountNote {
+        font-size: 1.5rem;
+        margin-bottom: 4.2rem;
+    }
+
+    .smallGift {
+        left: 0;
+    }
+
+    .largeGift {
+        left: 7rem;
+    }
+
+    .mediumGift {
+        left: 19rem;
+    }
+
+    .discountBackgroundElement {
+        margin-top: -10rem;
+        width: 7.25rem;
+        height: 60rem;
+        transform: rotate(28.831deg);
+        flex-shrink: 0;
+        background: #ECF1F8;
+        z-index: 1;
+    }
+
+    .discountBackgroundElement:nth-child(-n+15) {
+        display: none;
+    }
+
+    .questions {
+        height: auto;
+    }
+
+    .questionsTitle {
+        font-size: 5.3rem;
+    }
+
+    .questionFirstBlock {
+        height: 40rem;
+        padding-right: 4.5rem;
+        justify-content: start;
+    }
+
+    .questionFirstBlockTitle {
+        font-size: 3.9rem;
+        margin-bottom: 5rem;
+        margin-top: 2rem;
+    }
+
+    .questionFirstBlockNumber {
+        font-size: 5.3rem;
+        margin-bottom: 5rem;
+
+    }
+
+    .questionFirstBlockNote {
+        font-size: 2.81rem;
+    }
+
+    .questionSecondBlockTitle {
+        font-size: 3.9rem;
+    }
+
+    .questionSecondBlock {
+        padding-left: 4.5rem;
+    }
+
+    .questionSecondBlockInput {
+        width: 44rem;
+        padding: 5rem 3rem;
+        font-size: 5rem;
+        border-radius: .45rem;
+        margin-bottom: 3rem;
+    }
+
+    .questionSecondBlockNote {
+        font-size: 2.81rem;
+
+    }
+
+
+    .questionSecondBlockButton {
+        width: 44rem;
+        padding: 5rem 3rem;
+        font-size: 3rem;
+        border-radius: .45rem;
+        margin-bottom: 3rem;
+
+    }
+
+    .questionsNote {
+        font-size: 2.81rem;
+        width: 80rem;
+        text-align: center;
+        margin-bottom: 7rem;
+    }
+
+    .office {
+        height: auto;
+    }
+
+    .officeTitle {
+        font-size: 5.3rem;
+        margin-bottom: 7rem;
+    }
+
+    .officeAddress {
+        text-align: start;
+        width: 110rem;
+        font-size: 2.81rem;
+    }
+
+    .officeMap {
+        width: 110rem;
+        height: 50rem;
+        margin-bottom: 7rem;
+    }
+
+    .footer {
+        height: 50rem;
+        margin-bottom: 0;
+    }
+
+    .footerLogo {
+        width: 40rem;
+        height: 10rem;
+    }
+
+    .logoImg {
+        width: auto;
+        height: 7rem;
+        margin-right: .5rem;
+    }
+
+    .logoText {
+        width: 33rem;
+        height: auto;
+    }
+
+    .logoDescription {
+        margin-top: 1rem;
+        width: 33rem;
+        height: 1.9rem;
+
+    }
+
+    .footerBody {
+        width: 110rem;
+        height: 50rem;
+        align-items: start;
+        margin-top: 2rem;
+    }
+
+    .footerPoint {
+        font-size: 2.8rem;
+        font-weight: 400;
+        line-height: 5rem;
+    }
+
+    .footerColumn {
+        max-width: 40rem;
+        height: auto;
+
+    }
+
+
 
 }

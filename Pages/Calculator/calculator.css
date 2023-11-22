@@ -11,7 +11,7 @@ html {
     font-size: .83vw;
 }
 
-.primary {
+.primary{
     background: #FFF;
     box-shadow: 0 0 1.67rem 0 rgba(0, 0, 0, .15);
     height: 6.25em;
@@ -19,15 +19,51 @@ html {
     align-items: center;
     justify-content: space-between;
     z-index: 100;
-
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .logo {
     width: 17.5rem;
     height: 3.22694rem;
     flex-shrink: 0;
-    background: #202B33;
-    margin-left: 1.9em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-left: 1.9rem;
+    cursor: pointer;
+
+}
+
+
+
+
+.logoImg {
+    height: 3.22694rem;
+    width: 6rem;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logoText {
+    width: 13.92813rem;
+    height: 1.44569rem;
+}
+
+.logoDescription {
+    margin-top: .36rem;
+    width: 13.92775rem;
+    height: 0.48781rem;
+    display: flex;
+    justify-content: start;
+    margin-left: -.3rem;
+    align-items: start;
 }
 
 .primaryFirstBlock {
@@ -50,6 +86,11 @@ html {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    text-decoration: none;
+}
+
+.primaryRef:visited {
+    color: #202B33;
 }
 
 .primarySecondBlock {
@@ -130,7 +171,7 @@ html {
 .bigArrows {
     position: absolute;
     display: flex;
-    top: 9.7rem;
+    top: 6rem;
     left: 0;
 }
 
@@ -171,7 +212,8 @@ html {
     flex-direction: column;
     align-items: center;
     width: 120rem;
-    height: 48.25rem;
+    min-height: 48rem;
+    margin-top: 6rem;
 }
 
 .calculatorTitle {
@@ -323,22 +365,58 @@ html {
     line-height: normal;
 }
 
+.result {
+    height: 7rem;
+    width: 55.5%;
+}
+
+#result {
+    display: none;
+}
+
+.costLabel {
+    color: #202B33;
+    font-family: Noto Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+}
+
+.cost {
+    color: #202B33;
+    font-family: Noto Sans;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
 
 
 .footer {
     height: 29rem;
     background: #232834;
     color: #FBFDFE;
-
     padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footerBody {
+    width: 73%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-left: 20rem;
-    width: 70%;
 }
 
 .footerColumn {
@@ -350,13 +428,18 @@ html {
 }
 
 .footerLogo {
-    height: 3.3rem;
     width: 17.5rem;
-    background: #0468FF;
+    height: 3.22694rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
 }
 
 .footerPoint {
     color: #FBFDFE;
+    font-family: Noto Sans;
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 600;
@@ -367,8 +450,155 @@ html {
     margin-top: 5rem;
     color: #C5C8CB;
     text-align: center;
+    font-family: Noto Sans;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+
+@media (max-device-width: 480px), (max-width: 480px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .secondary {
+        display: none;
+    }
+
+    .primary {
+        display: none;
+    }
+
+
+    .smallArrows {
+        margin-top: 1rem;
+        width: 11.25rem;
+        height: 3.19rem;
+    }
+
+    .bigArrowsVertical {
+        right: 0;
+        top: 0;
+        gap: 0;
+        align-items: start;
+    }
+
+    .bigArrowVertical {
+        height: 10rem;
+        margin-bottom: -1rem;
+    }
+
+    .calculator {
+        height: auto;
+    }
+
+    .calculatorTitle {
+        font-size: 5.3rem;
+    }
+
+    .calculatorFirstContainer {
+        border: none;
+        height: auto;
+        width: 110rem;
+        margin-left: 0;
+        padding: 0;
+        z-index: 2;
+    }
+
+    .calculatorBlock {
+        margin-bottom: 3rem;
+    }
+
+    .calculatorBlockTitle {
+        font-size: 3.3rem;
+    }
+
+    .calculatorFirstInput {
+        width: 50rem;
+        height: 8rem;
+        font-size: 2.81rem;
+        border: 1px solid #9A999A;
+    }
+
+    .changeButton {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .changeButtonSvg {
+        height: 7.9rem;
+        width: 7.9rem;
+    }
+
+    .calculatorInput {
+        width: 53.2rem;
+        height: 8rem;
+        font-size: 2.81rem;
+        border: 1px solid #9A999A;
+    }
+
+    .calcButton {
+        width: 53.2rem;
+        height: 8rem;
+        font-size: 2.81rem;
+        border-radius: .775rem;
+    }
+
+    .calculatorContainer {
+        display: none;
+    }
+
+
+    .footer {
+        height: 50rem;
+        margin-bottom: 0;
+    }
+
+    .footerLogo {
+        width: 40rem;
+        height: 10rem;
+    }
+
+    .logoImg {
+        width: auto;
+        height: 7rem;
+        margin-right: .5rem;
+    }
+
+    .logoText {
+        width: 33rem;
+        height: auto;
+    }
+
+    .logoDescription {
+        margin-top: 1rem;
+        width: 33rem;
+        height: 1.9rem;
+
+    }
+
+    .footerBody {
+        width: 110rem;
+        height: 50rem;
+        align-items: start;
+        margin-top: 2rem;
+    }
+
+    .footerPoint {
+        font-size: 2.8rem;
+        font-weight: 400;
+        line-height: 5rem;
+    }
+
+    .footerColumn {
+        max-width: 40rem;
+        height: auto;
+
+    }
+
+
+
 }

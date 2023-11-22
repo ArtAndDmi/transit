@@ -11,7 +11,11 @@ html {
     font-size: .83vw;
 }
 
-.primary {
+body {
+    overflow-x: hidden;
+}
+
+.primary{
     background: #FFF;
     box-shadow: 0 0 1.67rem 0 rgba(0, 0, 0, .15);
     height: 6.25em;
@@ -19,15 +23,51 @@ html {
     align-items: center;
     justify-content: space-between;
     z-index: 100;
-
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .logo {
     width: 17.5rem;
     height: 3.22694rem;
     flex-shrink: 0;
-    background: #202B33;
-    margin-left: 1.9em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-left: 1.9rem;
+    cursor: pointer;
+
+}
+
+
+
+
+.logoImg {
+    height: 3.22694rem;
+    width: 6rem;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logoText {
+    width: 13.92813rem;
+    height: 1.44569rem;
+}
+
+.logoDescription {
+    margin-top: .36rem;
+    width: 13.92775rem;
+    height: 0.48781rem;
+    display: flex;
+    justify-content: start;
+    margin-left: -.3rem;
+    align-items: start;
 }
 
 .primaryFirstBlock {
@@ -50,6 +90,11 @@ html {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    text-decoration: none;
+}
+
+.primaryRef:visited {
+    color: #202B33;
 }
 
 .primarySecondBlock {
@@ -128,8 +173,7 @@ html {
 
 .smallArrowsWhite {
     width: 4.5625rem;
-    height: 0.875rem;
-    background: #fff;
+    height: 1rem;
     margin-top: 5.8rem;
     margin-bottom: .8em;
 }
@@ -138,12 +182,15 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 120rem;
+    width: 120.5rem;
     height: 41.4375rem;
     background: #202B33;
     position: relative;
     overflow: hidden;
+    margin-top: 6rem;
 }
+
+
 
 .mainScreenBody {
     padding-left: 23.5rem;
@@ -194,15 +241,55 @@ html {
     position: absolute;
     top: -75%;
     right: -34%;
+    overflow: hidden;
+}
+
+.planeImg {
+    position: absolute;
+    top: 30rem;
+    overflow: hidden;
+    width: 66rem;
 }
 
 
 .smallArrows {
     width: 4.5625rem;
     height: 0.875rem;
-    background: #202B33;
     margin-top: 3rem;
     margin-bottom: 1.25em;
+}
+
+
+.bigArrows {
+    position: absolute;
+    display: flex;
+    top: -6rem;
+    left: 0;
+}
+
+.bigArrow {
+    width: 9.22769rem;
+    height: 9.9375rem;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.bigArrowsVertical {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 10rem;
+    right: 6.8rem;
+    z-index: 2;
+}
+
+.bigArrowVertical {
+    width: 10rem;
+    height: 10rem;
+    flex-shrink: 0;
+    z-index: -1;
+    margin-bottom: 0;
+
 }
 
 .calculator {
@@ -210,8 +297,12 @@ html {
     flex-direction: column;
     align-items: center;
     width: 120rem;
-    height: 48.25rem;
+    min-height: 48rem;
+    margin-top: 6rem;
+    position: relative;
 }
+
+
 
 .calculatorTitle {
     color: #202B33;
@@ -220,6 +311,7 @@ html {
     font-weight: 700;
     line-height: normal;
     margin-bottom: 3.75rem;
+    z-index: 2;
 }
 
 .calculatorBodyContainer {
@@ -252,6 +344,8 @@ html {
 
 .calculatorInputs {
     display: flex;
+    align-items: center;
+    gap: .94rem;
 }
 
 .calculatorFirstInput {
@@ -259,7 +353,7 @@ html {
     border: 1px solid #9A999A;
     background: #FDFCFD;
     padding: 1rem;
-    width: 20.25rem;
+    width: 20.4rem;
     height: 3.75rem;
     flex-shrink: 0;
     color: #4C555B;
@@ -273,9 +367,19 @@ html {
 
 
 .changeButton {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    /*margin: -.3rem .9rem 0 .9rem;*/
+    border: none;
+}
+
+.changeButtonSvg {
     width: 3.75rem;
     height: 3.75rem;
-    margin: 0 0.9rem;
 }
 
 .calculatorInput {
@@ -283,7 +387,7 @@ html {
     border: 1px solid #9A999A;
     background: #FDFCFD;
     padding: 1rem;
-    width: 22.625rem;
+    width: 22.3rem;
     height: 3.75rem;
     flex-shrink: 0;
     color: #4C555B;
@@ -305,7 +409,7 @@ html {
     padding: 1.125rem 2rem;
     justify-content: center;
     align-items: center;
-    gap: 0.625rem;
+    /*gap: 0.625rem;*/
     border-radius: 0.3125rem;
     background: #0468FF;
     color: #FFF;
@@ -349,10 +453,45 @@ html {
     line-height: normal;
 }
 
+.result {
+    height: 7rem;
+    width: 55.5%;
+}
+
+#result {
+    display: none;
+}
+
+.costLabel {
+    color: #202B33;
+    font-family: Noto Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+}
+
+.cost {
+    color: #202B33;
+    font-family: Noto Sans;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
 
 .numbers {
     height: 22.75rem;
-    background: #F2F5FA;
+    background: #F7F9FC;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -421,7 +560,6 @@ html {
 .advantageImage {
     width: 11.125rem;
     height: 11.125rem;
-    background: #202B33;
     margin-right: 2.2rem;
 }
 
@@ -471,17 +609,25 @@ html {
 }
 
 .stagesImages {
-    background: #202B33;
+    /*background: #202B33;*/
     width: 75rem;
     height: 6.25rem;
     margin-bottom: 2.2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.stagesImagesLine {
+    margin-top: 2rem;
 }
 
 .stagesTitles {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 75rem;
+    width: 79rem;
+    margin-left: -2rem;
 }
 
 .stageTitle {
@@ -494,7 +640,9 @@ html {
     width: 9.375rem;
 }
 
-
+.stageImagesMobile {
+    display: none;
+}
 
 
 .partners {
@@ -505,6 +653,8 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
+
 }
 
 .partnersTitle {
@@ -520,8 +670,31 @@ html {
 .partnersLine {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: auto;
     justify-content: space-around;
+    gap: 3rem;
+    height: 10rem;
+    margin-left: 143rem;
+    /*margin-left: -118rem;*/
+    /*animation-name: runLine;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-duration: 2s;*/
+    animation: runLine 20s linear infinite;
+    /*transform: translateX(-50.8%);*/
+    /*transform: translateX(0);*/
+
+}
+
+@keyframes runLine {
+    0% {
+        margin-left: 143rem;
+    }
+    100% {
+        /*transform: translateX(-112.1rem);*/
+        /*transform: translateX(-50.8%);*/
+        margin-left: -118rem;
+
+    }
 }
 
 .partner {
@@ -531,13 +704,22 @@ html {
     border-radius: 0.3125rem;
     background: #FFF;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+
+.uvexImg {
+    height: 40%;
 }
 
 .recommendations {
     width: 120rem;
     height: 55.1875rem;
     flex-shrink: 0;
-    background: #F2F5FA;
+    background: #FAFBFD;
 }
 
 .recommendationsTitleContainer {
@@ -545,6 +727,7 @@ html {
     justify-content: center;
     align-items: center;
     width: 100%;
+
 }
 
 .recommendationsTitle {
@@ -567,8 +750,33 @@ html {
     width: 23.5rem;
     height: 32.5rem;
     border-radius: 0.3125rem;
-    box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.15);
     margin: 0 .65rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recommendationImg {
+    width: 110%;
+    border-radius: 0.3125rem;
+
+}
+
+.recommendationsNames {
+    margin-left: 24rem;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.recommendationsName {
+    color: #2D2D2D;
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.04rem;
 }
 
 .discount {
@@ -577,6 +785,54 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.discountBackground {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 120%;
+    overflow: hidden;
+    top: -3rem;
+}
+
+.discountBackgroundElement {
+    width: 2.83331rem;
+    height: 38.02181rem;
+    transform: rotate(28.831deg);
+    flex-shrink: 0;
+    background: #ECF1F8;
+    z-index: 1;
+}
+
+.largeGift {
+    position: absolute;
+    bottom: 0;
+    left: 23rem;
+    z-index: 1;
+    width: 11.1875rem;
+    height: 10.25rem;
+}
+
+.mediumGift {
+    position: absolute;
+    bottom: 0;
+    left: 35.5rem;
+    width: 6.5625rem;
+    height: 5.375rem;
+    z-index: 1;
+}
+
+.smallGift {
+    position: absolute;
+    bottom: 0;
+    left: 16.1rem;
+    z-index: 1;
+    width: 5.4375rem;
+    height: 4.375rem;
+    flex-shrink: 0;
 }
 
 .discountTitle {
@@ -589,6 +845,7 @@ html {
     width: 53.3125rem;
     margin-top: 5rem;
     margin-bottom: 3.3rem;
+    z-index: 2;
 }
 
 .discountButton {
@@ -606,6 +863,8 @@ html {
     font-weight: 600;
     line-height: normal;
     margin-bottom: 3.3rem;
+    z-index: 2;
+
 }
 
 .discountNote {
@@ -615,6 +874,8 @@ html {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    z-index: 2;
+
 }
 
 .questions {
@@ -773,14 +1034,20 @@ html {
     background: #202B33;
 }
 
+
+
 .footer {
     height: 29rem;
     background: #232834;
     color: #FBFDFE;
     padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footerBody {
+    width: 73%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -795,9 +1062,13 @@ html {
 }
 
 .footerLogo {
-    height: 3.3rem;
     width: 17.5rem;
-    background: #0468FF;
+    height: 3.22694rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
 }
 
 .footerPoint {
@@ -818,4 +1089,435 @@ html {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+
+@media (max-device-width: 480px), (max-width: 480px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .secondary {
+        display: none;
+    }
+
+    .primary {
+        display: none;
+    }
+
+    .mainScreen {
+        height: auto;
+    }
+
+    .mainScreenBody {
+        padding-left: 5rem;
+    }
+
+    .mainScreenTitle {
+        font-size: 5.3rem;
+    }
+
+    .mainScreenDescription {
+        font-size: 2.81rem;
+        width: 50rem;
+    }
+
+    .mainScreenImg {
+        width: 104.25rem;
+        height: 104.25rem;
+        border-radius: 50%;
+        border: 1rem solid #0468FF;
+        position: absolute;
+        top: -25%;
+        right: -40%;
+        overflow: hidden;
+    }
+
+
+    .planeImg {
+        position: absolute;
+        top: 14rem;
+        overflow: hidden;
+        width: 110rem;
+        right: 10rem;
+    }
+
+    .mainScreenButton {
+        width: 30rem;
+        height: 7rem;
+        font-size: 2.81rem;
+        margin-bottom: 7rem;
+        margin-top: 2rem;
+        border-radius: .775rem;
+    }
+
+
+    .smallArrows {
+        margin-top: 1rem;
+        width: 11.25rem;
+        height: 4.19rem;
+        margin-left: 2.5rem;
+    }
+
+    .smallArrowsWhite {
+        margin-top: 1rem;
+        width: 11.25rem;
+        height: 4.19rem;
+    }
+
+    .calculator {
+        height: auto;
+        position: relative;
+    }
+
+    .bigArrows {
+        top: -6rem;
+    }
+
+    .calculatorTitle {
+        font-size: 5.3rem;
+    }
+
+    .calculatorFirstContainer {
+        border: none;
+        height: auto;
+        width: 110rem;
+        margin-left: 0;
+        padding: 0;
+        z-index: 2;
+    }
+
+    .calculatorBlock {
+        margin-bottom: 3rem;
+    }
+
+    .calculatorBlockTitle {
+        font-size: 3.3rem;
+    }
+
+    .calculatorFirstInput {
+        width: 50rem;
+        height: 8rem;
+        font-size: 2.81rem;
+        border: 1px solid #9A999A;
+    }
+
+    .changeButton {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .changeButtonSvg {
+        height: 7.9rem;
+        width: 7.9rem;
+    }
+
+    .calculatorInput {
+        width: 53.2rem;
+        height: 8rem;
+        font-size: 2.81rem;
+        border: 1px solid #9A999A;
+    }
+
+    .calcButton {
+        width: 53.2rem;
+        height: 8rem;
+        font-size: 2.81rem;
+        border-radius: .775rem;
+    }
+
+    .calculatorContainer {
+        display: none;
+    }
+
+    .numbers {
+        height: 37.5rem;
+    }
+
+    .numbersContainer {
+        width: 115rem;
+        justify-content: space-between;
+
+    }
+
+    .numberTitle {
+        font-size: 11rem;
+    }
+
+    .numberDescription {
+        font-size: 2.81rem;
+        width: 31rem;
+    }
+
+    .advantages {
+        height: auto;
+    }
+
+    .advantageRow {
+        width: 115rem;
+    }
+
+    .advantageImage {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .advantageContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advantageTitle {
+        font-size: 3.8rem;
+        width: auto;
+        text-align: center;
+    }
+
+    .advantageDescription {
+        font-size: 2.81rem;
+        text-align: center;
+        width: 50rem;
+    }
+
+    .stages {
+        height: auto;
+    }
+    .stagesTitle {
+        font-size: 5.3rem;
+    }
+
+    .stagesImages {
+        border: 1px solid red;
+        display: none;
+        height: auto;
+
+    }
+
+    .stagesTitles {
+        display: none;
+    }
+
+    .stageImagesMobile {
+        display: block;
+    }
+
+    .stageImagesMobileRow {
+        display: flex;
+        gap: 15rem;
+    }
+
+    .stageSvg {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .stageImagesMobileItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stageTitle {
+        margin-top: 2rem;
+        font-size: 2.81rem;
+        width: 25rem;
+    }
+
+
+    .partners {
+        height: auto;
+    }
+
+    .partnersTitle {
+        font-size: 5.3rem;
+    }
+
+    .partnersLine {
+        height: 23rem;
+        margin-left: 342rem;
+        animation: runLineMobile 20s linear infinite;
+
+
+    }
+
+    @keyframes runLineMobile {
+        0% {
+            margin-left: 342rem;
+        }
+        100% {
+
+            margin-left: -120rem;
+
+        }
+    }
+
+    .partner {
+        width: 30rem;
+        height: 15rem;
+        border-radius: 0.3125rem;
+        padding: 2rem;
+    }
+
+
+
+    .recommendations {
+        height: auto;
+    }
+
+    .recommendationsTitle {
+        font-size: 5.3rem;
+        margin-top: 4rem;
+        margin-bottom: 7rem;
+    }
+
+    .recommendationsPapersContainer {
+        justify-content: center;
+        gap: 0;
+    }
+
+    .recommendationsPaper {
+        width: 38.525rem;
+        height: auto;
+        border-radius: 0.3125rem;
+        margin: 0;
+    }
+
+    .recommendationImg {
+        width: 40.525rem;
+        height: auto;
+        border-radius: 0.3125rem;
+        margin: 0;
+    }
+
+    .recommendationsNames {
+        width: 112rem;
+        margin-left: 4rem;
+    }
+
+    .recommendationsName {
+        font-size: 2.81rem;
+        padding-bottom: 5rem;
+    }
+
+
+    .discount {
+        height: auto;
+
+    }
+
+    .discountTitle {
+        font-size: 4.5rem;
+        width: 70rem;
+        margin-bottom: 3.3rem;
+    }
+
+    .discountButton {
+        padding: 2rem 3.75rem;
+        font-size: 2rem;
+        border-radius: .45rem;
+        margin-bottom: 4.2rem;
+    }
+
+    .discountNote {
+        font-size: 1.5rem;
+        margin-bottom: 4.2rem;
+    }
+
+    .smallGift {
+        left: 0;
+    }
+
+    .largeGift {
+        left: 7rem;
+    }
+
+    .mediumGift {
+        left: 19rem;
+    }
+
+    .discountBackgroundElement {
+        margin-top: -10rem;
+        width: 7.25rem;
+        height: 60rem;
+        transform: rotate(28.831deg);
+        flex-shrink: 0;
+        background: #ECF1F8;
+        z-index: 1;
+    }
+
+    .discountBackgroundElement:nth-child(-n+15) {
+        display: none;
+    }
+
+
+    .office {
+        height: auto;
+    }
+
+    .officeTitle {
+        font-size: 5.3rem;
+        margin-bottom: 7rem;
+    }
+
+    .officeAddress {
+        text-align: start;
+        width: 110rem;
+        font-size: 2.81rem;
+    }
+
+    .officeMap {
+        width: 110rem;
+        height: 50rem;
+        margin-bottom: 7rem;
+    }
+
+    .footer {
+        height: 50rem;
+        margin-bottom: 0;
+    }
+
+    .footerLogo {
+        width: 40rem;
+        height: 10rem;
+    }
+
+    .logoImg {
+        width: auto;
+        height: 7rem;
+        margin-right: .5rem;
+    }
+
+    .logoText {
+        width: 33rem;
+        height: auto;
+    }
+
+    .logoDescription {
+        margin-top: 1rem;
+        width: 33rem;
+        height: 1.9rem;
+
+    }
+
+    .footerBody {
+        width: 110rem;
+        height: 50rem;
+        align-items: start;
+        margin-top: 2rem;
+    }
+
+    .footerPoint {
+        font-size: 2.8rem;
+        font-weight: 400;
+        line-height: 5rem;
+    }
+
+    .footerColumn {
+        max-width: 40rem;
+        height: auto;
+
+    }
+
+
 }
