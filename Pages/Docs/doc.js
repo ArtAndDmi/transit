@@ -6,11 +6,11 @@ const thirdLine = document.getElementById('thirdLine')
 const navMenu = document.getElementById('navMenu')
 let isActive = false
 
+
 menuIcon.addEventListener('click', () => {
     menuIcon.style.transition = '.2s'
     if (!isActive) {
         menuIcon.style.rotate = '45deg'
-        firstLine.style.display = 'none'
         navMenu.style.display = 'block'
         navMenu.style.transition = '.2s'
         document.body.style.overflowY = 'hidden'
@@ -18,17 +18,15 @@ menuIcon.addEventListener('click', () => {
             navMenu.style.transform = 'translateX(-3vw)'
         }, 1)
 
-        thirdLine.setAttribute('y', '-2')
-        thirdLine.setAttribute('x', '13')
-        thirdLine.setAttribute('width', '2')
-        thirdLine.setAttribute('height', '27')
+        firstLine.setAttribute('d', 'M10 18H26')
+        thirdLine.setAttribute('d', 'M18 10 L18 26')
+
 
 
         isActive = true
 
     } else {
         menuIcon.style.rotate = '0deg'
-        firstLine.style.display = 'block'
         navMenu.style.transition = '.2s'
         navMenu.style.transform = 'translateX(100vw)'
         document.body.style.overflowY = 'auto'
@@ -36,11 +34,9 @@ menuIcon.addEventListener('click', () => {
         setTimeout(() => {
             navMenu.style.display = 'none'
         }, 200)
-        thirdLine.setAttribute('y', '20')
-        thirdLine.removeAttribute('x')
-        thirdLine.setAttribute('width', '27')
-        thirdLine.setAttribute('height', '2')
 
+        firstLine.setAttribute('d', 'M10 12H26')
+        thirdLine.setAttribute('d', 'M10 24H26')
 
         isActive = false
 

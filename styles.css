@@ -1155,22 +1155,18 @@ html {
         border: none;
     }
 
+
+
     .mobileHeaderBurgerIcon {
-        /*border: 1px solid #000;*/
-        height: 15.625rem;
-        width: 15.625rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        z-index: 20;
-    }
-
-    .mobileHeaderBurgerIcon {
-        margin-right: 6rem;
-        width: 7rem;
-        height: 7rem;
+        width: 16rem;
+        height: 16rem;
+        padding-left: 3rem;
         cursor: pointer;
         z-index: 25;
+        margin-right: 2rem;
     }
 
     .navMenu {
