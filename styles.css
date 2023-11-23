@@ -584,6 +584,7 @@ html {
     flex-direction: column;
     justify-content: space-between;
     margin-top: -.3rem;
+    margin-left: 1rem;
 }
 
 .cargoBlockInfoTitle {
@@ -594,6 +595,7 @@ html {
     line-height: normal;
     width: 19.5625rem;
     text-align: left;
+    margin-left: 1rem;
 }
 
 .cargoBlockInfoDescription {
@@ -604,6 +606,8 @@ html {
     line-height: normal;
     width: 19.5625rem;
     text-align: left;
+    margin-left: 1rem;
+
 
 }
 
@@ -935,7 +939,7 @@ html {
     width: 30.4375rem;
     height: 5.75rem;
     border-radius: 0.4375rem;
-    border: 0.01rem solid #9A999A;
+    border: 0.1rem solid #9A999A;
     background: #F4F3F4;
     margin-bottom: 1.5rem;
     padding: 0.8rem 1.5rem;
@@ -949,7 +953,7 @@ html {
 }
 
 .questionSecondBlockInput:focus {
-    border: 0.01rem solid #0468FF;
+    border: 0.1rem solid #0468FF;
 }
 
 .questionSecondBlockButton {
@@ -1011,6 +1015,10 @@ html {
 
 .contactSvg {
     height: 3rem;
+}
+
+.addressSvg {
+    height: 1.7rem;
 }
 
 .officeAddress {
