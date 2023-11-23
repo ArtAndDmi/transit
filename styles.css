@@ -949,7 +949,6 @@ html {
     font-weight: 600;
     line-height: normal;
     outline: none;
-    transition: .2s;
 }
 
 .questionSecondBlockInput:focus {
