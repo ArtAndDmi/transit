@@ -93,10 +93,19 @@ html {
     font-weight: 600;
     line-height: normal;
     text-decoration: none;
+    transition: .2s;
+}
+
+.primaryRef:hover {
+    color: #0468FF;
 }
 
 .primaryRef:visited {
     color: #202B33;
+}
+
+.primaryRef:visited:hover {
+    color: #0468FF;
 }
 
 .primarySecondBlock {
@@ -167,6 +176,7 @@ html {
     font-weight: 600;
     line-height: normal;
     cursor: pointer;
+    transition: .2s;
 }
 
 .button:hover {
@@ -459,6 +469,13 @@ html {
     height: 4.5rem;
 }
 
+.cargoBlockInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -.3rem;
+}
+
 .cargoBlockInfoTitle {
     color: #202B33;
     font-size: 2rem;
@@ -514,7 +531,7 @@ html {
     /*animation-name: runLine;*/
     /*animation-iteration-count: infinite;*/
     /*animation-duration: 2s;*/
-    animation: runLine 20s linear infinite;
+    animation: runLine 30s linear infinite;
     /*transform: translateX(-50.8%);*/
     /*transform: translateX(0);*/
 
@@ -699,7 +716,19 @@ html {
     line-height: normal;
     margin-bottom: 3.3rem;
     z-index: 2;
+    transition: .2s;
+    cursor: pointer;
 
+}
+
+
+
+.discountButton:hover {
+    background: #0687FF;
+}
+
+.discountButton:active {
+    background: #09A7FF;
 }
 
 .discountNote {
@@ -805,6 +834,12 @@ html {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    outline: none;
+    transition: .2s;
+}
+
+.questionSecondBlockInput:focus {
+    border: 0.01rem solid #0468FF;
 }
 
 .questionSecondBlockButton {
@@ -825,8 +860,18 @@ html {
     font-weight: 600;
     line-height: normal;
     margin-bottom: 1.5rem;
-
+    transition: .2s;
+    cursor: pointer;
 }
+
+.questionSecondBlockButton:hover {
+    background: #0687FF;
+}
+
+.questionSecondBlockButton:active {
+    background: #09A7FF;
+}
+
 
 .questionSecondBlockNote {
     color: #4C555B;
@@ -854,6 +899,10 @@ html {
     margin-bottom: 3.75rem;
 }
 
+.contactSvg {
+    height: 3rem;
+}
+
 .officeAddress {
     color: #202B33;
     font-size: 2rem;
@@ -861,6 +910,8 @@ html {
     font-weight: 600;
     line-height: normal;
     margin-bottom: 2.2rem;
+    margin-left: -39rem;
+
 
 }
 

@@ -269,8 +269,8 @@ html {
     width: 23.3125rem;
     height: 12.8125rem;
     flex-shrink: 0;
-    border: 0.01rem solid #93AACB;
     background: #ECF1F8;
+    border-radius: .625rem;
 }
 
 .contactsSecondBlockTitle {
@@ -297,7 +297,6 @@ html {
     margin-top: 3.75rem;
     width: 67rem;
     height: 31.3125rem;
-    border: 0.01rem solid #9A999A;
 }
 
 

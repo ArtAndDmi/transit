@@ -231,11 +231,15 @@ html {
     flex-direction: row;
     justify-content: center;
     align-items: start;
+    margin-left:5rem;
+    /*gap: 10rem;*/
 }
 
 .aboutUsBody {
     display: flex;
     flex-direction: column;
+    margin-right: -10rem;
+
 }
 
 .aboutUsBlock {
@@ -268,7 +272,8 @@ html {
 .aboutUsImage {
     width: 41.3125rem;
     height: 29.3125rem;
-    margin-left: 5rem;
+    margin-left: 20rem;
+
 }
 
 .truckImg {
@@ -423,7 +428,7 @@ html {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 2.8rem;
+    margin-bottom: 1.5rem;
 }
 
 .partner {

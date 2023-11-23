@@ -243,6 +243,13 @@ html {
     flex-direction: row;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.servicesBlock:hover {
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+
 }
 
 .servicesBlock:first-child {
@@ -260,7 +267,6 @@ html {
 .servicesBlockIcon {
     width: 4.4375rem;
     height: 4.4375rem;
-    margin-bottom: 1rem;
 }
 
 

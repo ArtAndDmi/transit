@@ -310,6 +310,11 @@ html {
     font-weight: 600;
     line-height: normal;
     width: 27.25rem;
+    cursor: pointer;
+}
+
+.otherDocName:hover {
+    text-decoration: underline;
 }
 
 .otherDocSize {
