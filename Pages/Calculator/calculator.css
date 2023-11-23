@@ -537,6 +537,22 @@ html {
         width: 30rem;
     }
 
+    .mobileHeaderButton {
+        display: inline-flex;
+        padding: 3.125rem 5rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        background: #0468FF;
+        color: #FFF;
+        font-family: Noto Sans;
+        font-size: 2.81rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border: none;
+    }
+
     .mobileHeaderBurgerIcon {
         display: flex;
         align-items: center;
