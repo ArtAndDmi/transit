@@ -1,3 +1,4 @@
+
 const menuIcon = document.getElementById('mobileHeaderBurgerSvg')
 const firstLine = document.getElementById('firstLine')
 const secondLine = document.getElementById('secondLine')
@@ -45,39 +46,4 @@ menuIcon.addEventListener('click', () => {
 
 
     }
-})
-
-function redirectToURL(url) {
-    window.location.href = url
-}
-
-const modalBtn = document.getElementById('modalBtn')
-const modal = document.getElementById('modal')
-const modalBody = document.getElementById('modalBody')
-let modalActive = false
-modalBtn.addEventListener('click', () => {
-    modal.style.opacity = '0'
-    modal.style.display = 'flex'
-    setTimeout(() => {
-        modal.style.opacity = '1'
-    },1)
-
-
-})
-
-modal.addEventListener('click', () => {
-    modal.style.opacity = '0'
-
-    setTimeout(() => {
-        modal.style.display = 'none'
-    },200)
-})
-
-
-document.getElementById('modalButton').addEventListener('click', () => {
-    modal.style.opacity = '0'
-
-    setTimeout(() => {
-        modal.style.display = 'none'
-    },200)
 })

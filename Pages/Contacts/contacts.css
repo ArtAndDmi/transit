@@ -356,10 +356,144 @@ html {
     line-height: normal;
 }
 
+.mobileHeader {
+    display: none;
+}
+
 @media (max-device-width: 480px), (max-width: 480px) {
 
     body {
         overflow-x: hidden;
+    }
+
+
+    .mobileHeader {
+        display: flex;
+        height: 15.625rem;
+        align-items: center;
+        padding-left: 4rem;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        z-index: 1001;
+        background: #FFFFFF;
+        width: 122rem;
+        box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.15);
+
+    }
+
+    .mobileHeaderLogo {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        width: 50rem;
+    }
+
+    .mobileHeaderLogoIcon {
+        height: 8rem;
+        width: 8rem;
+
+    }
+
+    .mobileHeaderLogoLabels {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobileHeaderLogoName {
+        height: 5rem;
+        width: 30rem;
+
+    }
+
+    .mobileHeaderLogoLabel {
+        height: 3rem;
+        width: 30rem;
+    }
+
+    .mobileHeaderButton {
+        display: inline-flex;
+        padding: 3.125rem 5rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        background: #0468FF;
+        color: #FFF;
+        font-family: Noto Sans;
+        font-size: 2.81rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border: none;
+    }
+
+    .mobileHeaderBurgerIcon {
+        /*border: 1px solid #000;*/
+        height: 15.625rem;
+        width: 15.625rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 20;
+    }
+
+    .mobileHeaderBurgerIcon {
+        margin-right: 6rem;
+        width: 4.2rem;
+        height: 3.4rem;
+        cursor: pointer;
+        z-index: 25;
+    }
+
+    .navMenu {
+        position: absolute;
+        top: 0;
+        z-index: 10;
+        width: 110vw;
+        height: 100vh;
+        transition: .2s;
+        background: #FFFFFF;
+        transform: translateX(110vw);
+        padding-top: 5rem;
+    }
+
+
+
+    .navMenuItem {
+        color: #202B33;
+        font-family: Noto Sans;
+        font-size: 5rem;
+        padding-left: 5rem;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        cursor: pointer;
+        transition: .2s;
+    }
+
+    .navMenuItem:hover {
+        background: #EFEFEF;
+    }
+
+    .navMenuItem:active {
+        background: #EFEFEF;
+    }
+
+
+    .navMenuItem:first-child {
+        margin-top: 10rem;
+    }
+
+    .navMenuLabel {
+        color: #202B33;
+        text-decoration: none;
+    }
+
+    .navMenuLabel:visited {
+        color: #202B33;
+        text-decoration: none;
     }
 
     .secondary {
@@ -371,7 +505,7 @@ html {
     }
 
     .bigArrows {
-        top: 0;
+        top: 16rem;
     }
 
     .smallArrows {
@@ -382,7 +516,7 @@ html {
 
     .bigArrowsVertical {
         right: 0;
-        top: 0;
+        top: 16rem;
         gap: 0;
         align-items: start;
     }
@@ -394,6 +528,7 @@ html {
 
     .contacts {
         height: auto;
+        margin-top: 16rem;
     }
 
     .contactsName {
@@ -420,8 +555,9 @@ html {
     }
 
     .contactsSecondBlock {
-        height: 20rem;
+        height: 23rem;
         width: 32rem;
+        border-radius: .775rem;
     }
 
     .contactsSecondBlockTitle {

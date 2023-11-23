@@ -4,19 +4,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:  Noto Sans, 'sans-serif';
+    font-family: Noto Sans, 'sans-serif';
 }
 
 html {
     font-size: .83vw;
 }
 
-.mobileHeader {
-    display: none;
-}
-
-.navMenu {
-    display: none;
+body {
+    overflow-x: hidden;
 }
 
 .primary{
@@ -41,6 +37,8 @@ html {
     align-items: center;
     justify-content: start;
     margin-left: 1.9rem;
+    cursor: pointer;
+
 }
 
 
@@ -93,19 +91,10 @@ html {
     font-weight: 600;
     line-height: normal;
     text-decoration: none;
-    transition: .2s;
-}
-
-.primaryRef:hover {
-    color: #0468FF;
 }
 
 .primaryRef:visited {
     color: #202B33;
-}
-
-.primaryRef:visited:hover {
-    color: #0468FF;
 }
 
 .primarySecondBlock {
@@ -124,7 +113,7 @@ html {
     margin-right: 2.5rem;
 }
 
-.secondary{
+.secondary {
     background: #202B33;
     color: #fff;
     display: flex;
@@ -142,14 +131,12 @@ html {
 
 }
 
-
-
 .secondaryItem {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 20rem;
+    width: 15rem;
 }
 
 .secondaryText {
@@ -158,7 +145,6 @@ html {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-left: 1rem;
 }
 
 .button {
@@ -175,8 +161,6 @@ html {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    cursor: pointer;
-    transition: .2s;
 }
 
 .button:hover {
@@ -187,137 +171,99 @@ html {
     background: #09A7FF;
 }
 
-.modal {
-    position: fixed;
-    bottom: 0;
-    height: 100vh;
-    width: 100vw;
-    background: rgba(0, 0, 0, .3);
-    z-index: 100;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    transition: .2s;
+.smallArrowsWhite {
+    width: 4.5625rem;
+    height: 1rem;
+    margin-top: 5.8rem;
+    margin-bottom: .8em;
 }
 
-.modalBody {
-    border-radius: 0.625rem;
-    background: #FCFCFC;
-    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.50);
+.mainScreen {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 120.5rem;
+    height: 41.4375rem;
+    background: #202B33;
+    position: relative;
+    overflow: hidden;
+    margin-top: 6rem;
 }
 
-.modalTitle {
-    color: #202B33;
-    text-align: center;
-    font-size: 2.5rem;
+
+
+.mainScreenBody {
+    padding-left: 23.5rem;
+    height: 100%;
+}
+
+.mainScreenTitle {
+    color: #FFF;
+    font-size: 3.375rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 0.05rem;
-    padding-top: 2rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    width: 30.1875rem;
+    margin-bottom: 1.25rem;
 }
 
-.modalInput {
-    width: 25rem;
-    border-radius: 0.4375rem;
-    border: 1px solid #9A999A;
-    outline: none;
-    background: #FDFCFD;
-    color: #6A6C6C;
-    font-family: Noto Sans;
+.mainScreenDescription {
+    color: #FFF;
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 0.0225rem;
-    padding: .7rem 1rem;
-    margin-top: 1rem;
-    transition: .2s;
+    width: 30.1875rem;
+    margin-bottom: 3.75rem;
 }
 
-.modalInput:focus {
-    border: 1px solid #0468FF;
-
-}
-
-.modalButton {
-    width: 25rem;
-    border-radius: 0.4375rem;
-    background: #0468FF;
+.mainScreenButton {
+    border: none;
     color: #FFF;
-    font-family: Noto Sans;
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    letter-spacing: 0.0225rem;
-    transition: .2s;
-    cursor: pointer;
-    border: none;
-    padding: .7rem 1rem;
-    margin-top: 1rem;
-}
-
-.modalButton:hover {
-    background: #0687FF;
-}
-
-.modalButton:active {
-    background: #09A7FF;
-}
-
-.modalBottom {
-    display: flex;
+    display: inline-flex;
+    padding: 1.125rem 2rem;
+    justify-content: center;
     align-items: center;
-    height: 3rem;
-    justify-content: space-between;
-    width: 24.4rem;
-    margin-bottom: 2rem;
+    gap: 0.625rem;
+    border-radius: 0.3125rem;
+    background: #0468FF;
 }
 
-.modalCheckBox {
-    height: 1rem;
-    width: 1rem;
+.mainScreenImg {
+    width: 104.25rem;
+    height: 104.25rem;
+    border-radius: 50%;
+    border: 1rem solid #0468FF;
+    position: absolute;
+    top: -75%;
+    right: -34%;
+    overflow: hidden;
 }
 
-.modalText {
-    color: #202B33;
-    font-family: Noto Sans;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.02rem;
+.planeImg {
+    position: absolute;
+    top: 30rem;
+    overflow: hidden;
+    width: 66rem;
 }
 
 
-.mainScreen {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #FDFCFD;
-    padding-left: 22rem;
-    height: 40rem;
-    position: relative;
-    z-index: 0;
-    margin-top: 6rem;
-
+.smallArrows {
+    width: 4.5625rem;
+    height: 0.875rem;
+    margin-top: 3rem;
+    margin-bottom: 1.25em;
 }
 
-.mainScreenInfo {
-    margin-left: 1rem;
-
-}
 
 .bigArrows {
     position: absolute;
     display: flex;
-    top: 0;
+    top: -6rem;
     left: 0;
 }
 
@@ -325,96 +271,239 @@ html {
     width: 9.22769rem;
     height: 9.9375rem;
     flex-shrink: 0;
+    z-index: 1;
+}
+
+.bigArrowsVertical {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 10rem;
+    right: 6.8rem;
+    z-index: 2;
+}
+
+.bigArrowVertical {
+    width: 10rem;
+    height: 10rem;
+    flex-shrink: 0;
     z-index: -1;
+    margin-bottom: 0;
 
 }
 
-.smallArrows {
-    width: 4.5625rem;
-    height: 0.875rem;
-    margin-bottom: 1.25em;
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120rem;
+    min-height: 48rem;
+    margin-top: 6rem;
+    position: relative;
 }
 
-.mainScreenTitle {
+
+
+.calculatorTitle {
     color: #202B33;
     font-size: 3.375rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    width: 30.1875rem;
+    margin-bottom: 3.75rem;
+    z-index: 2;
 }
 
-.mainScreenDescription {
-    margin-top: 2.2rem;
-    margin-bottom: 3.75rem;
+.calculatorBodyContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.calculatorFirstContainer {
+    box-sizing: content-box;
+    padding-right: 2.3rem;
+    border-right: 0.1rem solid #9A999A;
+    width: 46rem;
+    height: 29.5rem;
+    margin-left: 6rem;
+}
+
+
+.calculatorBlockTitle {
+    color: #202B33;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 1.5rem;
+}
+
+.calculatorBlock {
+    margin-bottom: 2.8rem;
+}
+
+.calculatorInputs {
+    display: flex;
+    align-items: center;
+    gap: .94rem;
+}
+
+.calculatorFirstInput {
+    border-radius: 0.4375rem;
+    border: 1px solid #9A999A;
+    background: #FDFCFD;
+    padding: 1rem;
+    width: 20.4rem;
+    height: 3.75rem;
+    flex-shrink: 0;
     color: #4C555B;
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 31.9375rem;
+    letter-spacing: 0.0225rem;
 }
 
-.truckImg{
-    height: 100%;
-}
 
-.truckImgMobile {
-    display: none;
-}
 
-.whiteBtn {
+.changeButton {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: transparent;
-    border-radius: 0.3125rem;
-    border: .15rem solid #0468FF;
-    height: 4rem;
-    display: inline-flex;
+    /*margin: -.3rem .9rem 0 .9rem;*/
+    border: none;
+}
+
+.changeButtonSvg {
+    width: 3.75rem;
+    height: 3.75rem;
+}
+
+.calculatorInput {
+    border-radius: 0.4375rem;
+    border: 1px solid #9A999A;
+    background: #FDFCFD;
+    padding: 1rem;
+    width: 22.3rem;
+    height: 3.75rem;
+    flex-shrink: 0;
+    color: #4C555B;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.0225rem;
+    margin-right: 0.9em;
+}
+
+.calculatorInput:last-child {
+    margin-right: 0;
+}
+
+.calcButton {
+    display: flex;
+    width: 23.625rem;
     padding: 1.125rem 2rem;
     justify-content: center;
     align-items: center;
-    gap: 0.625rem;
-    color: #0468FF;
+    /*gap: 0.625rem;*/
+    border-radius: 0.3125rem;
+    background: #0468FF;
+    color: #FFF;
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-left: 1rem;
+    border: 0;
 }
+
+.calculatorContainer {
+    margin-left: 2.25rem;
+}
+
+.calculatorContainerDescription {
+    color: #4C555B;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.0225rem;
+    width: 22rem;
+}
+
+.sendNumberButton {
+    margin-top: 2.2rem;
+    border: none;
+    display: flex;
+    width: 20.5rem;
+    padding: 1.125rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.3125rem;
+    background: #0468FF;
+    color: #FFF;
+    font-family: Noto Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.result {
+    height: 7rem;
+    width: 55.5%;
+}
+
+#result {
+    display: none;
+}
+
+.costLabel {
+    color: #202B33;
+    font-family: Noto Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+}
+
+.cost {
+    color: #202B33;
+    font-family: Noto Sans;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
 
 .numbers {
     height: 22.75rem;
-    background: #F2F5FA;
+    background: #F7F9FC;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: relative;
-    overflow: hidden;
-
 }
 
-.numbersBackground {
-    position: absolute;
-    display: flex;
-    justify-content: space-around;
-    width: 120%;
-    overflow: hidden;
-}
 
-.numbersBackgroundElement {
-    width: 2.83331rem;
-    height: 38.02181rem;
-    transform: rotate(28.831deg);
-    flex-shrink: 0;
-    background: #ECF1F8;
-    z-index: 1;
-}
 
 .numbersContainer {
     width: 77%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    z-index: 2;
 }
 
 .number {
@@ -442,169 +531,121 @@ html {
     width: 15.4375rem;
 }
 
-.statistics {
+.advantages {
     width: 120rem;
-    height: 49.9375rem;
-    background: #FAFBFD;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-
-.statisticsTitle {
-    color: #202B33;
-    font-size: 3.375rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 5rem;
-    margin-bottom: 3.75rem;
-}
-
-.statisticContainer {
-    display: flex;
-    width: 73%;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.statistic {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.statisticWeight {
-    color: #4C555B;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.statisticGraphic {
-    width: 16rem;
-    height: 19.07688rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.statisticSvg {
-    margin-top: 1rem;
-    width: 15.5rem;
-    height: 18rem;
-}
-
-.statisticWe {
-    color: #202B33;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.statisticTk {
-    color: #202B33;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-left: 3rem;
-}
-
-.statisticBenefit {
-    margin-top: 2rem;
-    color: #202B33;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-
-.cargo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #FAFBFD;
-}
-
-.cargoContainer {
-    width: 80%;
-    text-align: center;
-}
-
-.cargoTitle {
-    color: #202B33;
-
-    font-size: 3.75rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 3.8rem;
-    margin-top: 5rem;
-}
-
-.cargoBlockRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.cargoBlock {
-    width: 28rem;
-    height: 6.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 6.25rem;
-}
-
-.cargoAvatar {
-    width: 6.25rem;
-    height: 6.25rem;
+    height: 39.4375rem;
     flex-shrink: 0;
-    background: #E9EFF8;
-    border-radius: 1.25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cargoAvatarImg {
-    height: 4.5rem;
-}
-
-.cargoBlockInfo {
+    background: #F7F9FC;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-top: -.3rem;
+    align-items: center;
 }
 
-.cargoBlockInfoTitle {
+.advantageRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75rem;
+    margin-bottom: 7rem;
+}
+
+.advantageRow:first-child {
+    margin-top: 5rem;
+}
+
+.advantageContainer {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.advantageImage {
+    width: 11.125rem;
+    height: 11.125rem;
+    margin-right: 2.2rem;
+}
+
+.advantageBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.advantageTitle {
     color: #202B33;
     font-size: 2rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    width: 19.5625rem;
-    text-align: left;
+    margin-bottom: 1.25rem;
 }
 
-.cargoBlockInfoDescription {
+.advantageDescription {
     color: #4C555B;
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 19.5625rem;
-    text-align: left;
-
+    width: 22.25rem;
 }
+
+.stages {
+    display: flex;
+    flex-direction: column;
+    width: 120rem;
+    height: 32.8125rem;
+    flex-shrink: 0;
+    background: #F7F9FC;
+    align-items: center;
+}
+
+
+.stagesTitle {
+    color: #202B33;
+    text-align: center;
+    font-size: 3.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 5rem 0;
+}
+
+.stagesImages {
+    /*background: #202B33;*/
+    width: 75rem;
+    height: 6.25rem;
+    margin-bottom: 2.2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.stagesImagesLine {
+    margin-top: 2rem;
+}
+
+.stagesTitles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 79rem;
+    margin-left: -2rem;
+}
+
+.stageTitle {
+    text-align: center;
+    color: #202B33;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 9.375rem;
+}
+
+.stageImagesMobile {
+    display: none;
+}
+
 
 .partners {
     width: 120rem;
@@ -640,7 +681,7 @@ html {
     /*animation-name: runLine;*/
     /*animation-iteration-count: infinite;*/
     /*animation-duration: 2s;*/
-    animation: runLine 30s linear infinite;
+    animation: runLine 20s linear infinite;
     /*transform: translateX(-50.8%);*/
     /*transform: translateX(0);*/
 
@@ -825,19 +866,7 @@ html {
     line-height: normal;
     margin-bottom: 3.3rem;
     z-index: 2;
-    transition: .2s;
-    cursor: pointer;
 
-}
-
-
-
-.discountButton:hover {
-    background: #0687FF;
-}
-
-.discountButton:active {
-    background: #09A7FF;
 }
 
 .discountNote {
@@ -943,12 +972,6 @@ html {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    outline: none;
-    transition: .2s;
-}
-
-.questionSecondBlockInput:focus {
-    border: 0.01rem solid #0468FF;
 }
 
 .questionSecondBlockButton {
@@ -969,18 +992,8 @@ html {
     font-weight: 600;
     line-height: normal;
     margin-bottom: 1.5rem;
-    transition: .2s;
-    cursor: pointer;
-}
 
-.questionSecondBlockButton:hover {
-    background: #0687FF;
 }
-
-.questionSecondBlockButton:active {
-    background: #09A7FF;
-}
-
 
 .questionSecondBlockNote {
     color: #4C555B;
@@ -995,7 +1008,6 @@ html {
     flex-direction: column;
     align-items: center;
     height: 54.625rem;
-    background: #FAFBFD;
 }
 
 .officeTitle {
@@ -1008,10 +1020,6 @@ html {
     margin-bottom: 3.75rem;
 }
 
-.contactSvg {
-    height: 3rem;
-}
-
 .officeAddress {
     color: #202B33;
     font-size: 2rem;
@@ -1019,15 +1027,16 @@ html {
     font-weight: 600;
     line-height: normal;
     margin-bottom: 2.2rem;
-    margin-left: -39rem;
-
 
 }
 
 .officeMap {
     width: 73.125rem;
     height: 31.3125rem;
+    background: #202B33;
 }
+
+
 
 .footer {
     height: 29rem;
@@ -1084,15 +1093,17 @@ html {
     line-height: normal;
 }
 
-@media (max-device-width: 480px), (max-width: 480px) {
-    /*html {*/
-    /*    font-size: 3vw;*/
+.mobileHeader {
+    display: none;
+}
 
-    /*}*/
+
+@media (max-device-width: 480px), (max-width: 480px) {
 
     body {
         overflow-x: hidden;
     }
+
 
     .mobileHeader {
         display: flex;
@@ -1102,7 +1113,7 @@ html {
         justify-content: space-between;
         position: fixed;
         top: 0;
-        z-index: 3;
+        z-index: 1001;
         background: #FFFFFF;
         width: 122rem;
         box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.15);
@@ -1209,8 +1220,6 @@ html {
     }
 
 
-
-
     .navMenuItem:first-child {
         margin-top: 10rem;
     }
@@ -1225,7 +1234,6 @@ html {
         text-decoration: none;
     }
 
-
     .secondary {
         display: none;
     }
@@ -1234,207 +1242,137 @@ html {
         display: none;
     }
 
-
-    .modal {
-        position: fixed;
-        bottom: 0;
-        height: 100vh;
-        width: 100vw;
-        background: rgba(0, 0, 0, .3);
-        z-index: 100;
-        display: none;
-        align-items: center;
-        justify-content: center;
-        transition: .2s;
-    }
-
-    .modalBody {
-        border-radius: 2rem;
-        background: #FCFCFC;
-        box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.50);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 5rem 10rem;
-    }
-
-    .modalTitle {
-        color: #202B33;
-        text-align: center;
-        font-size: 7rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 0.05rem;
-
-    }
-
-    .modalInput {
-        width: 70rem;
-        border-radius: 1rem;
-        border: 1px solid #9A999A;
-        outline: none;
-        background: #FDFCFD;
-        color: #6A6C6C;
-        font-family: Noto Sans;
-        font-size: 4.5rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: 0.0225rem;
-        padding: 1.4rem 2rem;
-        margin-top: 3rem;
-        transition: .2s;
-    }
-
-    .modalInput:focus {
-        border: 1px solid #0468FF;
-
-    }
-
-    .modalButton {
-        width: 70rem;
-        border-radius: 1rem;
-        background: #0468FF;
-        color: #FFF;
-        font-family: Noto Sans;
-        font-size: 4.5rem;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        letter-spacing: 0.0225rem;
-        transition: .2s;
-        cursor: pointer;
-        border: none;
-        padding: 1.4rem 2rem;
-        margin-top: 3rem;
-    }
-
-    .modalButton:hover {
-        background: #0687FF;
-    }
-
-    .modalButton:active {
-        background: #09A7FF;
-    }
-
-    .modalBottom {
-        display: flex;
-        align-items: center;
-        height: auto;
-        justify-content: start;
-        gap: 2rem;
-        width: 75rem;
-        margin-bottom: 2rem;
-        margin-top: 3rem;
-        margin-left: 5rem;
-
-    }
-
-    .modalCheckBox {
-        height: 4rem;
-        width: 4rem;
-    }
-
-    .modalText {
-        color: #202B33;
-        font-family: Noto Sans;
-        font-size: 2.59rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: 0.02rem;
-    }
-
-
     .mainScreen {
-        margin-left: 0;
-        padding-left: 0;
-        flex-direction: column;
         height: auto;
-        width: 100vw;
-        position: relative;
-        margin-top: 15.625rem;
+        margin-top: 16rem;
     }
 
-    .mainScreenInfo {
-        width: 100vw;
-        padding-left: 2rem;
-        padding-right: 2rem;
+    .mainScreenBody {
+        padding-left: 5rem;
     }
+
+    .mainScreenTitle {
+        font-size: 5.3rem;
+    }
+
+    .mainScreenDescription {
+        font-size: 2.81rem;
+        width: 50rem;
+    }
+
+    .mainScreenImg {
+        width: 104.25rem;
+        height: 104.25rem;
+        border-radius: 50%;
+        border: 1rem solid #0468FF;
+        position: absolute;
+        top: -25%;
+        right: -40%;
+        overflow: hidden;
+    }
+
+
+    .planeImg {
+        position: absolute;
+        top: 14rem;
+        overflow: hidden;
+        width: 110rem;
+        right: 10rem;
+    }
+
+    .mainScreenButton {
+        width: 30rem;
+        height: 7rem;
+        font-size: 2.81rem;
+        margin-bottom: 7rem;
+        margin-top: 2rem;
+        border-radius: .775rem;
+    }
+
 
     .smallArrows {
         margin-top: 1rem;
         width: 11.25rem;
-        height: 2.19rem;
+        height: 4.19rem;
         margin-left: 2.5rem;
     }
 
+    .smallArrowsWhite {
+        margin-top: 1rem;
+        width: 11.25rem;
+        height: 4.19rem;
+    }
 
-    .mainScreenTitle {
+    .calculator {
+        height: auto;
+        position: relative;
+    }
+
+    .bigArrows {
+        top: -6rem;
+    }
+
+    .calculatorTitle {
+        font-size: 5.3rem;
+    }
+
+    .calculatorFirstContainer {
+        border: none;
+        height: auto;
         width: 110rem;
-        font-size: 7.5rem;
-        margin-bottom: 3.27rem;
-        margin-left: 2.5rem;
-        margin-right: 2.5rem;
-    }
-
-    .mainScreenDescription {
-        width: 110rem;
-        margin-left: 2.5rem;
-        margin-right: 2.5rem;
-        font-size: 2.81rem;
-    }
-
-    .buttonsContainer {
-        display: flex;
-        flex-direction: column;
-        margin: 71.8rem 2.5rem 7rem;
-
-    }
-
-    .button {
-        font-size: 2.81rem;
-        height: 9.5rem;
-        border-radius: .775rem;
-    }
-
-    .whiteBtn {
         margin-left: 0;
-        margin-top: 1.5rem;
+        padding: 0;
+        z-index: 2;
+    }
+
+    .calculatorBlock {
+        margin-bottom: 3rem;
+    }
+
+    .calculatorBlockTitle {
+        font-size: 3.3rem;
+    }
+
+    .calculatorFirstInput {
+        width: 50rem;
+        height: 8rem;
         font-size: 2.81rem;
-        height: 9.5rem;
+        border: 1px solid #9A999A;
+    }
+
+    .changeButton {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .changeButtonSvg {
+        height: 7.9rem;
+        width: 7.9rem;
+    }
+
+    .calculatorInput {
+        width: 53.2rem;
+        height: 8rem;
+        font-size: 2.81rem;
+        border: 1px solid #9A999A;
+    }
+
+    .calcButton {
+        width: 53.2rem;
+        height: 8rem;
+        font-size: 2.81rem;
         border-radius: .775rem;
-
     }
 
-    .truckImg {
-        display: none;
-    }
-
-    .truckImgMobile {
-        display: block;
-        position: absolute;
-        width: 120rem;
-        top: 50rem;
-    }
-
-    .numbersBackgroundElement {
-        width: 7.25rem;
-        height: 60rem;
-        transform: rotate(28.831deg);
-        flex-shrink: 0;
-        background: #ECF1F8;
-        z-index: 1;
-    }
-
-    .numbersBackgroundElement:nth-child(-n+15) {
+    .calculatorContainer {
         display: none;
     }
 
     .numbers {
         height: 37.5rem;
     }
+
+
 
     .numbersContainer {
         width: 115rem;
@@ -1448,93 +1386,83 @@ html {
 
     .numberDescription {
         font-size: 2.81rem;
-        width: 30rem;
+        width: 31rem;
     }
 
-    .statistics {
+    .advantages {
         height: auto;
-        padding-bottom: 7rem;
     }
 
-    .statisticsTitle {
-        font-size: 5.3rem;
-        margin-top: 7rem;
-        margin-bottom: 7rem;
+    .advantageRow {
+        width: 115rem;
     }
 
-    .statisticWeight {
-        font-size: 2.81rem;
+    .advantageImage {
+        height: 20rem;
+        width: 20rem;
     }
 
-    .statisticContainer {
-        width: 112rem;
-        justify-content: space-between;
-    }
-
-    .statisticGraphic {
-        width: 27.8rem;
-        height: 31.45rem;
-    }
-
-    .statisticSvg {
-        width: 27.8rem;
-        height: 31.45rem;
-    }
-
-    .statisticWe {
-        font-size: 2.81rem;
-    }
-
-    .statisticTk {
-        font-size: 2.81rem;
-        margin-left: 4.5rem;
-    }
-
-    .cargoTitle {
-        font-size: 5.3rem;
-        margin-top: 4rem;
-        margin-bottom: 7rem;
-    }
-
-    .cargoBlock {
+    .advantageContainer {
         flex-direction: column;
         align-items: center;
+    }
+
+    .advantageTitle {
+        font-size: 3.8rem;
         width: auto;
+        text-align: center;
+    }
+
+    .advantageDescription {
+        font-size: 2.81rem;
+        text-align: center;
+        width: 50rem;
+    }
+
+    .stages {
         height: auto;
     }
-
-    .cargoAvatar {
-        width: 15rem;
-        height: 15rem;
-        border-radius: 3rem;
+    .stagesTitle {
+        font-size: 5.3rem;
     }
 
-    .cargoAvatarImg {
-        height: 10rem;
+    .stagesImages {
+        border: 1px solid red;
+        display: none;
+        height: auto;
+
     }
 
-
-
-    .cargoBlockInfoTitle {
-        text-align: center;
-        width: auto;
-        font-size: 4rem;
-        margin-top: 1.5rem;
-        margin-bottom: 1rem;
+    .stagesTitles {
+        display: none;
     }
 
-    .cargoBlockInfoDescription {
-        margin: 0;
-        text-align: center;
+    .stageImagesMobile {
+        display: block;
+    }
+
+    .stageImagesMobileRow {
+        display: flex;
+        gap: 15rem;
+    }
+
+    .stageSvg {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .stageImagesMobileItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stageTitle {
+        margin-top: 2rem;
         font-size: 2.81rem;
-        width: 50rem;
-
+        width: 25rem;
     }
 
-    .cargoBlockRow {
-        margin-bottom: 7rem;
-        gap: 8rem;
-    }
 
     .partners {
         height: auto;
@@ -1570,6 +1498,8 @@ html {
         border-radius: 0.3125rem;
         padding: 2rem;
     }
+
+
 
     .recommendations {
         height: auto;
@@ -1609,6 +1539,7 @@ html {
         font-size: 2.81rem;
         padding-bottom: 5rem;
     }
+
 
     .discount {
         height: auto;
@@ -1659,73 +1590,6 @@ html {
         display: none;
     }
 
-    .questions {
-        height: auto;
-    }
-
-    .questionsTitle {
-        font-size: 5.3rem;
-    }
-
-    .questionFirstBlock {
-        height: 40rem;
-        padding-right: 4.5rem;
-        justify-content: start;
-    }
-
-    .questionFirstBlockTitle {
-        font-size: 3.9rem;
-        margin-bottom: 5rem;
-        margin-top: 2rem;
-    }
-
-    .questionFirstBlockNumber {
-        font-size: 5.3rem;
-        margin-bottom: 5rem;
-
-    }
-
-    .questionFirstBlockNote {
-        font-size: 2.81rem;
-    }
-
-    .questionSecondBlockTitle {
-        font-size: 3.9rem;
-    }
-
-    .questionSecondBlock {
-        padding-left: 4.5rem;
-    }
-
-    .questionSecondBlockInput {
-        width: 44rem;
-        padding: 5rem 3rem;
-        font-size: 5rem;
-        border-radius: .45rem;
-        margin-bottom: 3rem;
-    }
-
-    .questionSecondBlockNote {
-        font-size: 2.81rem;
-
-    }
-
-
-    .questionSecondBlockButton {
-        width: 44rem;
-        padding: 5rem 3rem;
-        font-size: 3rem;
-        border-radius: .45rem;
-        margin-bottom: 3rem;
-
-    }
-
-    .questionsNote {
-        font-size: 2.81rem;
-        width: 80rem;
-        text-align: center;
-        margin-bottom: 7rem;
-    }
 
     .office {
         height: auto;
@@ -1794,7 +1658,6 @@ html {
         height: auto;
 
     }
-
 
 
 }
