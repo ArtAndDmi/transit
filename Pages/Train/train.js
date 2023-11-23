@@ -17,10 +17,9 @@ menuIcon.addEventListener('click', () => {
         setTimeout(() => {
             navMenu.style.transform = 'translateX(-3vw)'
         }, 1)
-        //<rect y="10" width="27" height="2" rx="1" fill="#4C555B"/>
 
-        thirdLine.setAttribute('y', '-2.5')
-        thirdLine.setAttribute('x', '12.5')
+        thirdLine.setAttribute('y', '-2')
+        thirdLine.setAttribute('x', '13')
         thirdLine.setAttribute('width', '2')
         thirdLine.setAttribute('height', '27')
 

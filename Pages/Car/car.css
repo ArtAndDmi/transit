@@ -12,10 +12,6 @@ html {
     font-size: .83vw;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 
 .primaryRef:hover {
     color: #0468FF;
@@ -27,6 +23,10 @@ body {
 
 .primaryRef:visited:hover {
     color: #0468FF;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .primary{
