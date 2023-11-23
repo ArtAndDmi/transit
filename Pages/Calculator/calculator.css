@@ -549,13 +549,21 @@ html {
         margin-right: 2rem;
     }
 
-
     .mobileHeaderBurgerIcon {
-        margin-right: 6rem;
-        width: 7rem;
-        height: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 13rem;
+        height: 13rem;
+        padding-left: 3rem;
         cursor: pointer;
         z-index: 25;
+        margin-right: 4rem;
+    }
+
+    .mobileHeaderBurgerSvg {
+        width: 13rem;
+        height: 13rem;
     }
 
     .navMenu {

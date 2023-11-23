@@ -442,17 +442,21 @@ html {
         line-height: normal;
         border: none;
     }
-
     .mobileHeaderBurgerIcon {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 16rem;
-        height: 16rem;
+        width: 13rem;
+        height: 13rem;
         padding-left: 3rem;
         cursor: pointer;
         z-index: 25;
-        margin-right: 2rem;
+        margin-right: 4rem;
+    }
+
+    .mobileHeaderBurgerSvg {
+        width: 13rem;
+        height: 13rem;
     }
 
 
