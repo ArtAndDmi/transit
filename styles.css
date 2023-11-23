@@ -953,7 +953,7 @@ html {
 }
 
 .questionSecondBlockInput:focus {
-    border: 0.1rem solid #0468FF;
+    border: 0.2rem solid #0468FF;
 }
 
 .questionSecondBlockButton {
